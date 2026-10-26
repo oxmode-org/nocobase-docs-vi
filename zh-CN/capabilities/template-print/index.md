@@ -1,0 +1,5 @@
+# 模板打印
+
+提供合同、运输单或业务表单模板，让 Agent 在应用中实现数据填充与文档下载。模板打印包提供 Skill 和参考示例，实际页面、接口与渲染能力由应用按需实现。
+
+查看[使用说明](/nocobase-docs-vi/zh-CN/capabilities/template-print/usage.md)，了解模板准备、数据权限和 PDF 转换的边界。

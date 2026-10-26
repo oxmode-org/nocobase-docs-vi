@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/deployment" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/studio</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/studio" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/studio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-actions</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-data</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/page-context</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/work-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/answers</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/organize</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/search</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/handover</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/joint-review</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/requests</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/stages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/api-keys</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/login-pages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/password</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/protecting-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/sign-in-methods</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/data-scopes</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/default-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/inspector</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/permission-sets</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/restriction-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/sharing-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/configuration</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/development</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/task-center</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/definition</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/execution</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/progress</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/deployment" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/nocobase-2-vs-3</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/vi/studio</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/studio" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/studio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-actions</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-actions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-actions" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-data</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/business-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/business-data" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/page-context</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/page-context" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/page-context" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/work-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-employee/work-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-employee/work-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/answers</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/answers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/answers" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/maintenance</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/maintenance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/maintenance" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/organize</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/organize" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/organize" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/search</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/ai-knowledge-base/search" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/ai-knowledge-base/search" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/handover</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/handover" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/handover" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/joint-review</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/joint-review" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/joint-review" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/requests</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/requests" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/requests" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/stages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/approval/stages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/approval/stages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/api-keys</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/api-keys" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/api-keys" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/login-pages</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/login-pages" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/login-pages" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/password</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/password" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/password" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/protecting-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/protecting-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/protecting-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/sign-in-methods</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/auth/sign-in-methods" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/auth/sign-in-methods" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/data-scopes</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/data-scopes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/data-scopes" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/default-access</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/default-access" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/default-access" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/inspector</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/inspector" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/inspector" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/permission-sets</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/permission-sets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/permission-sets" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/restriction-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/restriction-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/restriction-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/sharing-rules</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/authorization/sharing-rules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/authorization/sharing-rules" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/data-sources/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/data-sources/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/file/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/file/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/i18n/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/i18n/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/configuration</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/configuration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/configuration" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/development</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/development" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/development" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/mail/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/mail/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/notification/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/notification/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/quick-start</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/quick-start" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/quick-start" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/scheduler/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/scheduler/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/task-center</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/task-center" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/task-center" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/template-print/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/template-print/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme/usage</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/theme/usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/theme/usage" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/definition</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/definition" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/definition" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/execution</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/execution" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/execution" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/extension</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/extension" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/extension" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/progress</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/capabilities/workflow/progress" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/capabilities/workflow/progress" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/deployment</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/deployment" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/deployment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/deployment" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/nocobase-2-vs-3</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/nocobase-2-vs-3" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/nocobase-2-vs-3" />
+  </url>
+  <url>
+    <loc>https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/studio</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://oxmode-org.github.io/nocobase-docs-vi/zh-CN/studio" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://oxmode-org.github.io/nocobase-docs-vi/vi/studio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oxmode-org.github.io/nocobase-docs-vi/studio" />
+  </url>
+</urlset>

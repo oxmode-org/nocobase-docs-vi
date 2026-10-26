@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oxmode-org.github.io/nocobase-docs-vi/sitemap.xml

@@ -1,0 +1,74 @@
+# NocoBase 文档
+
+> 快速学习和掌握 NocoBase
+
+## 快速启动
+
+- [快速启动](/nocobase-docs-vi/zh-CN/capabilities/quick-start.md): 创建并启动 NocoBase 应用，用一条提示词搭建运输管理工作台。
+
+## 能力
+
+- [总览](/nocobase-docs-vi/zh-CN/capabilities/index.md): 了解 NocoBase 提供的应用能力，以及如何把它们接入业务。
+- [认证](/nocobase-docs-vi/zh-CN/capabilities/auth/index.md): 了解认证已有能力，通过业务场景和提示词配置员工账号、企业登录与程序访问。
+- [密码认证与账号](/nocobase-docs-vi/zh-CN/capabilities/auth/password.md): 通过密码登录、管理员工账号、设置密码要求并找回密码。
+- [API keys](/nocobase-docs-vi/zh-CN/capabilities/auth/api-keys.md): 使用 API key 调用接口读取运输订单，并管理密钥有效期和撤销。
+- [增加认证方式](/nocobase-docs-vi/zh-CN/capabilities/auth/sign-in-methods.md): 接入企业身份平台及其他登录方式，明确账号关联规则。
+- [保护页面和接口](/nocobase-docs-vi/zh-CN/capabilities/auth/protecting-access.md): 区分公开页面、内部业务与登录后的权限。
+- [定制登录页面](/nocobase-docs-vi/zh-CN/capabilities/auth/login-pages.md): ← 认证概览 · 查看登录页品牌场景 完成账号管理和所需认证方式的接入后，可以进一步定制登录页面。登录页面属于应用源码，可以按照企业品牌调整名称、Logo、说明文字、图片、布局和配色。定制界面时应保留已有的账号认证、错误提示和密码恢复流程。 本页调整应用拥有的登录页面。品牌、布局与文案可以定制；登录动作、错误处理、账号规则和密码恢复需要继续使用已接入的认证流程。 向 Agent 描述需求 · 查看示例效果 · 继续调整页面
+- [数据源](/nocobase-docs-vi/zh-CN/capabilities/data-sources.md): 选择应用主数据库，并连接已有的外部业务数据库。
+- [数据源](/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage.md): 选择应用主数据库，并连接已有的外部业务数据库。
+- [权限](/nocobase-docs-vi/zh-CN/capabilities/authorization/index.md): 权限决定员工能进入哪些页面、执行哪些操作，以及查看或处理哪些记录。Northstar 的客户经理维护运输需求，调度员安排司机，司机处理分配给自己的任务；三者可以使用同一套应用，但业务职责和数据范围不同。 认证确认访问者身份。订单页面要求登录属于认证；司机只能办理自己的任务属于权限。
+- [权限集与分配](/nocobase-docs-vi/zh-CN/capabilities/authorization/permission-sets.md): 权限集将一组页面、业务操作和数据范围组合为可重复分配的岗位职责。多位客户经理可以使用同一个权限集；一位员工兼任多个岗位时，也可以获得多个权限集。
+- [数据范围与规则](/nocobase-docs-vi/zh-CN/capabilities/authorization/data-scopes.md): 数据范围决定一项操作能访问哪些记录。两个员工都可以查看订单，但客户经理只查看本人负责的订单，司机只查看分配给自己的任务。
+- [默认数据范围](/nocobase-docs-vi/zh-CN/capabilities/authorization/default-access.md): 默认数据范围为已经具有某项操作权限的人员增加共同可访问的记录。Northstar 的客户经理除了跟进本人订单，还需要查阅已完成的订单作为运营参考。
+- [共享规则](/nocobase-docs-vi/zh-CN/capabilities/authorization/sharing-rules.md): 共享规则为指定人员或已接入的组织对象增加记录范围，适用于临时协作和业务交接。接收人仍需要相应页面和业务操作权限。
+- [限制规则](/nocobase-docs-vi/zh-CN/capabilities/authorization/restriction-rules.md): 限制规则在已有授权上收窄记录范围，让岗位、共同范围和共享遵守同一业务边界。它不授予原本没有的操作或数据访问权。
+- [检查权限结果](/nocobase-docs-vi/zh-CN/capabilities/authorization/inspector.md): 权限检查帮助管理员理解一个用户能做什么、条件是什么，以及权限来自哪里。它用于解释授权，不统计符合条件的实际记录数量。
+- [工作流概览](/nocobase-docs-vi/zh-CN/capabilities/workflow/index.md): 定义多步骤流程，等待人员、外部结果或时间到，并查看执行进度。
+- [流程定义与操作控制](/nocobase-docs-vi/zh-CN/capabilities/workflow/definition.md): 工作流可以定义业务经过哪些阶段、每个阶段允许执行什么操作，以及操作后进入哪个阶段。操作可以要求指定人员执行、填写必要信息，或满足金额等条件；条件不同，可以进入不同分支或返回之前的阶段。 这些规则在服务端检查，页面只提供当前可执行的操作。两个人同时处理同一笔业务时，后提交的操作不会覆盖已经更新的结果，而是提示重新获取当前进度。
+- [等待、超时与可靠执行](/nocobase-docs-vi/zh-CN/capabilities/workflow/execution.md): 工作流可以在某个阶段停下来等待人员操作、外部系统返回结果，或约定时间到达，再继续推进。同一笔业务的等待状态会保存，应用重启后可以继续处理。 调用外部系统失败时，可以记录失败并按规则重试；收到重复结果时避免重复推进，收到迟到结果时按当前阶段处理。后续步骤失败还可以安排补救动作，例如释放已预留的车辆或仓位。
+- [流程进度与处理记录](/nocobase-docs-vi/zh-CN/capabilities/workflow/progress.md): 工作流可以提供当前阶段、经过的路径和处理历史。用户能知道业务走到哪里、正在等待什么，以及每一步由谁在什么时候完成、提交了哪些信息。 应用可以将这些信息做成流程图、阶段栏或记录列表，直接放在业务详情中。流程图用于展示执行进度，不是拖拽修改流程的设计器。
+- [审批概览](/nocobase-docs-vi/zh-CN/capabilities/approval/index.md): **审批用于组织业务申请的审核与决策，定义由谁审批、按什么顺序审批，以及满足什么条件才算通过。**它可以协调多个审批人的意见，支持加签、转交和退回，并保留每次决策与责任变化的记录。
+- [多级与条件审批](/nocobase-docs-vi/zh-CN/capabilities/approval/stages.md): 审批可以按顺序经过多个环节，由不同职责的人员分别审核。也可以根据金额、申请类型等条件决定是否增加某个环节，让不同申请走不同路线。 审批人可以来自指定人员、岗位、部门或主管关系。提交前展示预计路线，实际进入环节时按规则确定审批人。
+- [会签、或签与通过规则](/nocobase-docs-vi/zh-CN/capabilities/approval/joint-review.md): 同一个审批环节可以由多人共同决定。审批按设定的规则汇总意见，决定何时通过、何时驳回，以及是否还需等待其他人。 会签和多级审批不同：多级审批是依次经过不同环节；会签是在同一环节汇总多人的意见。
+- [加签与转交](/nocobase-docs-vi/zh-CN/capabilities/approval/handover.md): 审批过程中，可以临时增加需要参与的人，也可以将当前任务交给其他符合条件的人。两种操作都保留原审批人、接手人、操作原因和后续意见。
+- [申请处理与进度](/nocobase-docs-vi/zh-CN/capabilities/approval/requests.md): 审批可以覆盖提交、审核、退回补充、重新提交和结束的完整过程。申请人查看进度，审批人处理待办，抄送人查看资料与意见；不同人员拥有对应的操作入口。
+- [待办中心](/nocobase-docs-vi/zh-CN/capabilities/task-center.md): 通过可复制的 Agent 提示词，将审批、设备领取等个人待办接入统一入口，完成业务办理、数量展示和历史数据接入。
+- [文件](/nocobase-docs-vi/zh-CN/capabilities/file.md): 为订单添加运输附件，通过完整提示词和实际效果了解文件的上传、保存、预览与下载。
+- [文件](/nocobase-docs-vi/zh-CN/capabilities/file/usage.md): 为订单添加运输附件，通过完整提示词和实际效果了解文件的上传、保存、预览与下载。
+- [多语言](/nocobase-docs-vi/zh-CN/capabilities/i18n.md): 在 NocoBase 3 应用中切换界面语言、新增语言和设置默认语言。
+- [多语言](/nocobase-docs-vi/zh-CN/capabilities/i18n/usage.md): 在 NocoBase 3 应用中切换界面语言、新增语言和设置默认语言。
+- [主题](/nocobase-docs-vi/zh-CN/capabilities/theme.md): 了解 NocoBase 3 内置主题，向 Coding Agent 描述需求，修改、新增或删除主题。
+- [主题](/nocobase-docs-vi/zh-CN/capabilities/theme/usage.md): 了解 NocoBase 3 内置主题，向 Coding Agent 描述需求，修改、新增或删除主题。
+- [通知](/nocobase-docs-vi/zh-CN/capabilities/notification.md): 介绍站内信、邮件、飞书和钉钉通知，演示站内信发送及投递日志。
+- [通知](/nocobase-docs-vi/zh-CN/capabilities/notification/usage.md): 介绍站内信、邮件、飞书和钉钉通知，演示站内信发送及投递日志。
+- [定时任务](/nocobase-docs-vi/zh-CN/capabilities/scheduler.md): 按指定时间自动执行业务操作，通过完整提示词和实际效果了解定时提醒与任务管理。
+- [定时任务](/nocobase-docs-vi/zh-CN/capabilities/scheduler/usage.md): 按指定时间自动执行业务操作，通过完整提示词和实际效果了解定时提醒与任务管理。
+- [邮件](/nocobase-docs-vi/zh-CN/capabilities/mail/index.md): 在应用中收取、阅读和发送邮件。
+- [同步和发送邮件](/nocobase-docs-vi/zh-CN/capabilities/mail/quick-start.md): 添加邮件中心，同步客户来信并回复。
+- [更多邮件功能](/nocobase-docs-vi/zh-CN/capabilities/mail/usage.md): 使用签名和模板，在客户详情查看往来邮件，从运输订单编写邮件。
+- [邮箱接入配置](/nocobase-docs-vi/zh-CN/capabilities/mail/configuration.md): 配置服务商并关联用户邮箱。
+- [开发参考](/nocobase-docs-vi/zh-CN/capabilities/mail/development.md): 接入邮件页面、权限和后台任务。
+- [AI 员工概览](/nocobase-docs-vi/zh-CN/capabilities/ai-employee/index.md): AI 员工是应用中围绕具体职责工作的助手。它可以理解页面上下文、查询业务数据、按照工作规则调用允许的操作，并结合企业知识回答问题。你可以让开发 Agent 将这些能力接入应用，构建适合员工使用的对话与结果展示。
+- [理解页面上下文](/nocobase-docs-vi/zh-CN/capabilities/ai-employee/page-context.md): 处理业务时，用户常常需要围绕当前记录提问。应用可以把记录标识及必要信息作为上下文交给 AI 员工，让用户直接问「这笔订单下一步做什么」，无需重新复制客户、线路和状态。
+- [查询业务数据](/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-data.md): AI 员工可以把自然语言问题转成允许的业务查询，整理记录并提供页面入口。接入真实业务读取操作后，回答可以使用当前数据，而不只给出一般性建议。
+- [执行业务操作](/nocobase-docs-vi/zh-CN/capabilities/ai-employee/business-actions.md): AI 员工可以调用应用接入的业务操作，将自然语言请求转成具体处理，例如分配司机、创建跟进记录或准备通知。应用决定允许哪些动作、需要哪些输入，以及如何确认和展示执行结果。 涉及修改数据时，可以先展示操作计划，用户确认后再执行。业务操作仍需通过服务端权限检查，执行结果应与实际记录一致。
+- [职责与工作规则](/nocobase-docs-vi/zh-CN/capabilities/ai-employee/work-rules.md): AI 员工的职责说明可以明确服务对象、处理任务、回答重点和需要遵循的工作规则。工作方法可写入职责说明；支持技能接入的运行方式还可复用技能，让不同助手围绕各自职责处理同一个业务问题。 职责与技能指导工作方式，可执行范围由应用接入的操作和权限决定。助手的补充说明不能覆盖应用规则或当前任务要求。
+- [AI 知识库概览](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/index.md): 知识库把文章、文件和业务说明组织成可维护、可搜索的企业资料。员工可以直接查阅资料，也可以让 AI 员工在允许的知识范围中检索，为业务问题提供有依据的回答。
+- [组织与导入资料](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/organize.md): 知识库可以按空间区分资料用途，在空间内用文件夹整理文章与文件。文章适合持续维护业务说明，文件适合导入已有资料；上传后的文件可以查看原件预览与解析文本，便于后续阅读和搜索。
+- [查阅与搜索](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/search.md): 员工可以从知识目录打开文章或文件，阅读业务规范的原文，也可以输入关键词查找相关资料。搜索结果提供文档标题、段落和内容摘录，帮助用户判断是否相关，再回到原文核对上下文。 应用接入语义检索后，还可以用自然语言描述问题，按含义查找相关段落，而无需知道资料里的准确用词。
+- [依据知识回答问题](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/answers.md): 企业业务规则往往保存在文档中。AI 员工可以在允许访问的资料中查找相关内容，结合问题整理回答，并提供来源，帮助用户理解依据和继续查阅原文。
+- [访问与协作](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/access.md): 知识资料可以按空间、文件夹和文档分配阅读、提出修改、编辑和管理权限。阅读者查阅内容，提出修改者提交建议，编辑者维护正文并审核建议，管理者还可以调整访问范围。文档可以继承所在空间或文件夹的权限，也可以只允许指定成员访问。
+- [版本与处理状态](/nocobase-docs-vi/zh-CN/capabilities/ai-knowledge-base/maintenance.md): 文章和文件的更新保留版本历史，便于查看过去的内容与比较变化。文件上传后的文本解析，与语义检索所需的索引处理，是不同的阶段：解析完成说明已经提取文件文本，索引状态说明当前文档的段落是否完成处理。
+- [模板打印](/nocobase-docs-vi/zh-CN/capabilities/template-print/index.md): 让 Agent 根据 Office 模板和业务数据实现文档生成与下载。
+- [模板打印使用说明](/nocobase-docs-vi/zh-CN/capabilities/template-print/usage.md): 准备业务模板，确定数据来源与输出格式，并验证生成结果。
+- [扩展](/nocobase-docs-vi/zh-CN/capabilities/approval/extension.md): 组织审批接入、自定义策略与操作、界面、时限和可靠执行的扩展文档。
+- [开发参考](/nocobase-docs-vi/zh-CN/capabilities/workflow/extension.md): 本页供需要审核 Agent 生成代码或扩展流程的开发者参考。业务使用可以从流程定义与操作控制开始。
+
+## 部署
+
+- [应用部署](/nocobase-docs-vi/zh-CN/deployment.md): 通过 PM2 或 Docker 部署到自己的服务器，或将应用部署到 NocoBase Studio。选择一种方式，让 Agent 协助或按手动步骤完成部署。
+
+## Other
+
+- [NocoBase 2 与 3 的区别](/nocobase-docs-vi/zh-CN/nocobase-2-vs-3.md): 三种搭建方式的区别，在于业务逻辑放在哪里：数据库里的配置，还是你自己仓库里的源码。

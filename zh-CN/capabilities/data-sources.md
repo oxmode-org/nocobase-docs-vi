@@ -1,0 +1,7 @@
+# 数据源
+
+选择应用数据库，接入外部数据库，在业务页面中使用已有数据。
+
+在概览中选择业务场景，修改并复制提示词，再由应用项目中的 Agent 完成接入。
+
+具体操作和配置见[使用说明](/nocobase-docs-vi/zh-CN/capabilities/data-sources/usage.md)。
