@@ -1,0 +1,135 @@
+# Build the Vietnamese NocoBase docs and publish them at https://oxmode.ai/tai-lieu-nocobase/.
+#
+# Server contract (Caddy on the VPS, oxmode.ai block):
+#   @docs path /tai-lieu-nocobase/*  ->  root /srv/oxmode/docs/current, try_files {path} {path}/index.html,
+#   404s under the prefix are served from /tai-lieu-nocobase/404.html with status 404.
+# Layout on the VPS:  $DOCS_PATH/releases/<sha>/tai-lieu-nocobase/...   $DOCS_PATH/current -> releases/<sha>
+#
+# Secrets: DOCS_DEPLOY_KEY (key of the docsdeploy user), VPS_HOST, VPS_USER, VPS_KNOWN_HOSTS, DOCS_PATH.
+# Repository variable SKIP_PUBLIC_PROBE=true skips the public HTTPS probe (used before Caddy routes the path).
+#
+# Everything runs in one job and nothing is uploaded as an artifact or cache: the org's Actions storage is near
+# its limit.
+name: Deploy docs (tai-lieu-nocobase)
+
+on:
+  push:
+    branches: [oxmode-path]
+  workflow_dispatch:
+    inputs:
+      skip_public_probe:
+        description: Skip the public https://oxmode.ai/tai-lieu-nocobase/ probe (server-side checks still run)
+        type: boolean
+        default: false
+
+concurrency:
+  group: oxmode-docs-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  PREFIX: tai-lieu-nocobase
+  PUBLIC_URL: https://oxmode.ai/tai-lieu-nocobase/
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DOCS_PATH: ${{ secrets.DOCS_PATH }}
+      SKIP_PROBE: ${{ inputs.skip_public_probe == true || vars.SKIP_PUBLIC_PROBE == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: rel
+        run: echo "release=${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install docs dependencies
+        run: pnpm install --frozen-lockfile --filter @nocobase/docs...
+
+      - name: Build, package for /tai-lieu-nocobase/, index search
+        run: OUT="$RUNNER_TEMP/release" oxmode/build.sh "${{ steps.rel.outputs.release }}"
+
+      - name: Link check (0 broken, 0 requests escaping the prefix)
+        run: |
+          python3 oxmode/serve.py "$RUNNER_TEMP/release" 8917 &
+          for i in $(seq 1 20); do curl -fsS -o /dev/null http://127.0.0.1:8917/$PREFIX/ && break; sleep 0.5; done
+          python3 oxmode/crawl.py http://127.0.0.1:8917
+          test -f "$RUNNER_TEMP/release/$PREFIX/404.html"
+          grep -q '"release": "${{ steps.rel.outputs.release }}"' "$RUNNER_TEMP/release/$PREFIX/release.json"
+
+      - name: SSH setup
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "${{ secrets.DOCS_DEPLOY_KEY }}" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          printf '%s\n' "${{ secrets.VPS_KNOWN_HOSTS }}" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+          printf 'Host vps\n  HostName %s\n  User %s\n  IdentityFile ~/.ssh/id_deploy\n  IdentitiesOnly yes\n  StrictHostKeyChecking yes\n  BatchMode yes\n' \
+            "${{ secrets.VPS_HOST }}" "${{ secrets.VPS_USER }}" > ~/.ssh/config
+          ssh vps true
+
+      - name: Upload release
+        env:
+          RELEASE: ${{ steps.rel.outputs.release }}
+        run: |
+          ssh vps "mkdir -p '$DOCS_PATH/releases/$RELEASE'"
+          # Hard-link unchanged files against the live release so each release costs only what changed.
+          rsync -a --delete --checksum --chmod=D755,F644 \
+            --link-dest="$DOCS_PATH/current/" \
+            "$RUNNER_TEMP/release/" "vps:$DOCS_PATH/releases/$RELEASE/"
+          # Reset the directory mtime so pruning by age sees the upload time.
+          ssh vps "touch '$DOCS_PATH/releases/$RELEASE'"
+
+      - name: Switch current (atomic)
+        id: swap
+        env:
+          RELEASE: ${{ steps.rel.outputs.release }}
+        run: |
+          prev=$(ssh vps "readlink '$DOCS_PATH/current' || true")
+          echo "previous=$prev" >> "$GITHUB_OUTPUT"
+          ssh vps "cd '$DOCS_PATH' && ln -sfn 'releases/$RELEASE' current.next && mv -Tf current.next current"
+          echo "current: $(ssh vps "readlink '$DOCS_PATH/current'") (previous: ${prev:-none})"
+
+      - name: Verify on the server
+        env:
+          RELEASE: ${{ steps.rel.outputs.release }}
+        run: |
+          ssh vps "test \"\$(readlink '$DOCS_PATH/current')\" = 'releases/$RELEASE' && \
+            grep -q '\"release\": \"$RELEASE\"' '$DOCS_PATH/current/$PREFIX/release.json' && \
+            test -f '$DOCS_PATH/current/$PREFIX/index.html' && test -f '$DOCS_PATH/current/$PREFIX/404.html'"
+          echo "server: current -> releases/$RELEASE, marker and pages present"
+
+      - name: Probe live site
+        if: env.SKIP_PROBE != 'true'
+        env:
+          RELEASE: ${{ steps.rel.outputs.release }}
+        run: |
+          for i in $(seq 1 10); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$PUBLIC_URL")
+            marker=$(curl -fsS "${PUBLIC_URL}release.json?ts=$(date +%s)" || true)
+            missing=$(curl -s -o /dev/null -w '%{http_code}' "${PUBLIC_URL}khong-ton-tai-$RELEASE")
+            if [ "$code" = 200 ] && [ "$missing" = 404 ] && printf '%s' "$marker" | grep -q "\"release\": \"$RELEASE\""; then
+              echo "live: $RELEASE"; exit 0
+            fi
+            sleep 3
+          done
+          echo "probe failed: status=$code missing=$missing marker=$marker"; exit 1
+
+      - name: Roll back on failure
+        if: failure() && steps.swap.outputs.previous != ''
+        run: |
+          ssh vps "cd '$DOCS_PATH' && ln -sfn '${{ steps.swap.outputs.previous }}' current.next && mv -Tf current.next current"
+          echo "rolled back to ${{ steps.swap.outputs.previous }}"
+
+      - name: Keep the last 5 releases
+        if: success()
+        run: |
+          ssh vps "cd '$DOCS_PATH/releases' && cur=\$(basename \"\$(readlink ../current)\") && \
+            ls -1t | grep -vx \"\$cur\" | tail -n +5 | xargs -r rm -rf --"
+          ssh vps "ls -1t '$DOCS_PATH/releases'"

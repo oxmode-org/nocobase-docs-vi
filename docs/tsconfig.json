@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@nocobase/dev-config/tsconfig/base.json",
+    "astro/tsconfigs/strict"
+  ],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2023"],
+    "types": ["node"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [".astro/types.d.ts", "astro.config.ts", "src", "shared", "tests"],
+  "exclude": ["dist", "node_modules", "docs"]
+}

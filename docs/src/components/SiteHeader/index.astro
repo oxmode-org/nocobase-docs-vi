@@ -1,0 +1,28 @@
+---
+/**
+ * The site header: logo, language menu and outbound links. The markup is the static header the hand-built pages
+ * were designed with (`header.<lang>.json`), so every page carries the same header.
+ */
+import type { LanguageLink } from '../../lib/language-menu.ts';
+import { headerMarkup } from './markup.ts';
+import './header.scss';
+
+interface Props {
+  language: string;
+  languageLinks: LanguageLink[];
+}
+
+const { language, languageLinks } = Astro.props;
+// The OXMODE edition puts an attribution bar before the header markup; it scrolls away while the header stays sticky.
+const [, bar = '', header] =
+  /^(<div class="oxmode-bar">[\s\S]*?<\/nav><\/div>)?\s*([\s\S]*)$/.exec(
+    headerMarkup(language, languageLinks),
+  )!;
+---
+
+{bar && <Fragment set:html={bar} />}
+<div class='docs-top-nav' set:html={header} />
+
+<script>
+  import '../../scripts/language-menu.ts';
+</script>
