@@ -116,4 +116,17 @@
       if ((e.key === '/' && !typing) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); open(); }
     });
   }
+  // Trang chủ: lọc thẻ năng lực theo từ khóa.
+  const filter = document.querySelector('.lp-filter input');
+  if (filter) {
+    const cards = [...document.querySelectorAll('.lp-cap')];
+    const empty = document.querySelector('.lp-empty');
+    const fold = (t) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').toLowerCase();
+    filter.addEventListener('input', () => {
+      const q = fold(filter.value.trim());
+      let shown = 0;
+      for (const c of cards) { const hit = !q || fold(c.dataset.search).includes(q); c.hidden = !hit; shown += hit; }
+      if (empty) empty.hidden = shown > 0;
+    });
+  }
 })();

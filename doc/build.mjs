@@ -22,6 +22,9 @@ if (!dependency) throw new Error('需要 marked@4.3.0：在 doc/ 执行 npm ci�
 const { marked } = await import(pathToFileURL(dependency).href);
 
 const DATE = '2026-10-24';
+import { landingVi } from './landing/vi.mjs';
+// Languages whose home page is a landing page instead of a document page.
+const LANDINGS = { vi: landingVi };
 const LUCIDE = 'https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js';
 // 样式表和脚本的地址带上内容的版本号，改了样式后浏览器不会继续用缓存里的旧文件
 const VERSION = createHash('sha1').update(readFileSync(join(dir, 'assets/docs.css'))).update(readFileSync(join(dir, 'assets/docs.js'))).digest('hex').slice(0, 8);
@@ -63,14 +66,6 @@ const LANGS = [
       planned: 'Dự kiến',
       search: 'Tìm kiếm', searchLabel: 'Tìm kiếm trong tài liệu', searchPlaceholder: 'Tìm trong tài liệu NocoBase 3…', searchClose: 'Đóng',
       searchLoading: 'Đang tải chỉ mục tìm kiếm…', searchEmpty: 'Không tìm thấy kết quả phù hợp.', searchError: 'Chưa tải được chỉ mục tìm kiếm.', searchHint: 'Gõ từ khóa, ví dụ: triển khai, phân quyền, Agent.',
-      hero: {
-        eyebrow: 'NocoBase 3', tag: 'Bản tiếng Việt',
-        cards: [
-          { icon: 'rocket', title: 'Bắt đầu nhanh', text: 'Cài Skill, rồi để Agent tạo và khởi động ứng dụng NocoBase 3 đầu tiên của bạn.', page: 'core/getting-started/create-app' },
-          { icon: 'boxes', title: 'NocoBase Core', text: 'Nền tảng ứng dụng mã nguồn mở: phát triển, kiểm thử và triển khai cùng Agent.', page: 'core/index' },
-          { icon: 'users', title: 'NocoBase Studio', text: 'Không gian làm việc để con người dẫn dắt một đội Agent xây ứng dụng nghiệp vụ.', page: 'studio/index' },
-        ],
-      },
       fallbackTag: 'EN',
       fallback: (href) => `> [!NOTE] Chưa có bản tiếng Việt\n> Trang này chưa được dịch. Nội dung dưới đây là bản tiếng Anh gốc, giống trên [docs.nocobase.com](${href}).\n\n`,
     },
@@ -322,14 +317,24 @@ function render(markdown, { lang, ui, resolveLink = (href) => href }) {
 
 /* ---------- 页面外壳 ---------- */
 // head 是 canonical、hreflang 等额外的 <head> 内容；base 是资源的前缀，文档站用根路径 /
-function shell({ lang, title, description, crumb, body, toc, menu, pager, base, home, tabs = '', head = '', switcher = '', robots = '', hero = null }) {
+function shell({ lang, title, description, crumb, body, toc, menu, pager, base, home, tabs = '', head = '', switcher = '', robots = '', landing = '' }) {
   const { ui } = lang;
-  const intro = hero
-    ? `<section class="hero"><p class="hero-eyebrow"><span>${escape(hero.eyebrow)}</span><span>${escape(hero.tag)}</span></p><h1>${escape(title)}</h1>
-${description ? `<p class="lead">${escape(description)}</p>` : ''}<div class="hero-cards">${hero.cards.map((c) => `<a class="hero-card" href="${c.href}"><i data-lucide="${c.icon}" aria-hidden="true"></i><strong>${escape(c.title)}</strong><span>${escape(c.text)}</span></a>`).join('')}</div></section>`
-    : `${crumb ? `<p class="crumb">${escape(crumb)}</p>` : ''}<h1>${escape(title)}</h1>
+  const intro = `${crumb ? `<p class="crumb">${escape(crumb)}</p>` : ''}<h1>${escape(title)}</h1>
 ${description ? `<p class="lead">${escape(description)}</p>` : ''}`;
   const search = ui.search ? `<button class="search-open" type="button" aria-label="${escape(ui.searchLabel)}" aria-haspopup="dialog"><i data-lucide="search" aria-hidden="true"></i><span>${escape(ui.search)}</span><kbd>/</kbd></button>` : '';
+  const docLayout = `<div class="layout">
+<aside class="sidebar"><details class="menu" open><summary>${escape(ui.menu)}</summary><nav aria-label="${escape(ui.menuLabel)}">${menu}</nav></details></aside>
+<main id="content" class="content"${robots ? '' : ' data-pagefind-body'}>
+${intro}
+<article class="prose">
+${body}
+</article>
+<div data-pagefind-ignore="all">${pager}</div>
+<footer class="page-foot" data-pagefind-ignore="all"><span>${escape(ui.site)} · ${escape(ui.draft)} ${DATE}</span></footer>
+</main>
+<aside class="toc" aria-label="${escape(ui.toc)}">${toc}</aside>
+</div>
+`;
   return `<!doctype html>
 <html lang="${lang.code}">
 <head>
@@ -342,7 +347,7 @@ ${robots ? `<meta name="robots" content="${robots}">\n` : ''}${head}<link rel="i
 <link rel="apple-touch-icon" sizes="180x180" href="https://static-docs.nocobase.com/nocobase-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="${base}assets/docs.css?v=${VERSION}">
 </head>
 <body>
@@ -353,18 +358,13 @@ ${robots ? `<meta name="robots" content="${robots}">\n` : ''}${head}<link rel="i
 ${tabs ? `<nav class="sections" aria-label="${escape(ui.sections)}">${tabs}</nav>` : ''}
 <nav class="toplinks" aria-label="${escape(ui.links)}">${search}${switcher}<a href="https://github.com/nocobase/nocobase" target="_blank" rel="noopener">GitHub ↗</a><a href="${ui.websiteUrl}" target="_blank" rel="noopener">${escape(ui.website)} ↗</a></nav>
 </header>
-<div class="layout">
-<aside class="sidebar"><details class="menu" open><summary>${escape(ui.menu)}</summary><nav aria-label="${escape(ui.menuLabel)}">${menu}</nav></details></aside>
-<main id="content" class="content${hero ? ' is-home' : ''}"${robots ? '' : ' data-pagefind-body'}>
-${intro}
-<article class="prose">
-${body}
-</article>
-<div data-pagefind-ignore="all">${pager}</div>
+${landing ? `<div class="layout is-landing">
+<main id="content" class="landing"${robots ? '' : ' data-pagefind-body'}>
+${landing}
 <footer class="page-foot" data-pagefind-ignore="all"><span>${escape(ui.site)} · ${escape(ui.draft)} ${DATE}</span></footer>
 </main>
-<aside class="toc" aria-label="${escape(ui.toc)}">${toc}</aside>
 </div>
+` : docLayout}
 ${ui.search ? `<dialog class="search-dialog" aria-label="${escape(ui.searchLabel)}" data-base="${base}" data-loading="${escape(ui.searchLoading)}" data-empty="${escape(ui.searchEmpty)}" data-error="${escape(ui.searchError)}"><form method="dialog" class="search-head"><i data-lucide="search" aria-hidden="true"></i><input type="search" placeholder="${escape(ui.searchPlaceholder)}" aria-label="${escape(ui.searchLabel)}" autocomplete="off" spellcheck="false"><button type="submit" class="search-close">${escape(ui.searchClose)}</button></form><div class="search-results" aria-live="polite"><p class="search-note">${escape(ui.searchHint)}</p></div></dialog>` : ''}
 <script src="${LUCIDE}"></script>
 <script src="${base}assets/docs.js?v=${VERSION}"></script>
@@ -525,7 +525,12 @@ for (const lang of LANGS) {
       home: urlOf(lang, 'index'),
       head: headOf(lang, key, meta.title),
       switcher: switcherOf(lang, key),
-      hero: key === 'index' && ui.hero ? { ...ui.hero, cards: ui.hero.cards.map((c) => ({ ...c, href: urlOf(lang, c.page) })) } : null,
+      landing: key === 'index' && LANDINGS[lang.code] ? LANDINGS[lang.code]({
+        href: (page, hash) => `${urlOf(lang, page)}${hash ? `#${encodeURIComponent(hash)}` : ''}`,
+        escape,
+        copyButton: (label) => `<button type="button" class="copy-button" data-copied="${escape(ui.copied)}" data-failed="${escape(ui.copyFailed)}" aria-live="polite">${escape(label)}</button>`,
+        docHtml: r.html.replaceAll('{{base}}', BASE),
+      }) : '',
     }));
     // .md 副本：给 Agent 和 llms.txt 用，配图行换成它的说明
     const md = `# ${meta.title}\n\n${meta.description ? `> ${meta.description}\n\n` : ''}${info.body.replace(FIGURE_LINE, (_, names, classes, caption) => (caption ? `*${caption}*` : '')).trim()}\n`;
