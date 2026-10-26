@@ -53,4 +53,67 @@
       setTimeout(() => { button.textContent = label; }, 1600);
     });
   }
+  // Tìm kiếm (OXMODE): hộp thoại dùng chỉ mục Pagefind tạo lúc build, chỉ tải khi mở lần đầu.
+  const dialog = document.querySelector('.search-dialog');
+  const opener = document.querySelector('.search-open');
+  if (dialog && opener && typeof dialog.showModal === 'function') {
+    const input = dialog.querySelector('input');
+    const box = dialog.querySelector('.search-results');
+    const hint = box.textContent.trim();
+    const note = (text) => { box.replaceChildren(Object.assign(document.createElement('p'), { className: 'search-note', textContent: text })); };
+    let engine;
+    const load = () => engine ??= import(`${dialog.dataset.base}pagefind/pagefind.js`).then(async (pf) => {
+      await pf.options({ baseUrl: dialog.dataset.base, excerptLength: 22 });
+      pf.init();
+      return pf;
+    });
+    let seq = 0;
+    async function run() {
+      const q = input.value.trim();
+      const mine = ++seq;
+      if (!q) return;
+      let pf;
+      try { pf = await load(); } catch { if (mine === seq) note(dialog.dataset.error); return; }
+      const found = await pf.debouncedSearch(q, {}, 180);
+      if (found === null || mine !== seq) return;
+      const rows = await Promise.all(found.results.slice(0, 8).map((r) => r.data()));
+      if (mine !== seq) return;
+      if (!rows.length) { note(dialog.dataset.empty); return; }
+      const list = document.createElement('ul');
+      for (const row of rows) {
+        const marks = (x) => (x.excerpt.match(/<mark>/g) || []).length;
+        const sub = (row.sub_results || []).filter((x) => x.url !== row.url && marks(x)).sort((x, y) => marks(y) - marks(x))[0] || null;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = (sub || row).url;
+        const title = document.createElement('strong');
+        title.textContent = row.meta?.title || row.url;
+        if (sub?.title && sub.title !== title.textContent) {
+          const small = document.createElement('small');
+          small.textContent = ` › ${sub.title}`;
+          title.append(small);
+        }
+        const excerpt = document.createElement('span');
+        excerpt.innerHTML = (sub || row).excerpt; // Pagefind trả về đoạn trích đã escape, chỉ thêm <mark>.
+        a.append(title, excerpt);
+        li.append(a);
+        list.append(li);
+      }
+      box.replaceChildren(list);
+    }
+    const open = () => {
+      if (dialog.open) return;
+      dialog.showModal();
+      input.focus();
+      input.select();
+      load().catch(() => {});
+    };
+    opener.addEventListener('click', open);
+    input.addEventListener('input', () => { if (!input.value.trim()) { seq++; note(hint); return; } run(); });
+    dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+    document.addEventListener('keydown', (e) => {
+      const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName) || document.activeElement?.isContentEditable;
+      if ((e.key === '/' && !typing) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) { e.preventDefault(); open(); }
+    });
+  }
 })();

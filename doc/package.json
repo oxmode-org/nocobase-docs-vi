@@ -9,5 +9,8 @@
   "dependencies": {
     "highlight.js": "11.11.1",
     "marked": "4.3.0"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
   }
 }
