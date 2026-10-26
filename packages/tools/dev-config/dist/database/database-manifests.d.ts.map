@@ -1,1 +1,0 @@
-{"version":3,"file":"database-manifests.d.ts","sourceRoot":"","sources":["../../database/database-manifests.ts"],"names":[],"mappings":"AAsBA,MAAM,WAAW,4BAA4B;IAC3C,0EAA0E;IAC1E,QAAQ,CAAC,SAAS,EAAE,MAAM,CAAC;IAC3B,4EAA4E;IAC5E,QAAQ,CAAC,SAAS,EAAE,MAAM,CAAC;CAC5B;AAOD,kFAAkF;AAClF,wBAAsB,yBAAyB,CAC7C,OAAO,EAAE,4BAA4B,GACpC,OAAO,CAAC,IAAI,CAAC,CAWf"}

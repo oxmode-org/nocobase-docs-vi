@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Build the Vietnamese NocoBase docs for https://oxmode.ai/tai-lieu-nocobase/ into ./dist (a release root).
-# usage: build.sh [release-id]   (env: OUT=release root to write, default ./dist next to this script)
+# Build the Vietnamese NocoBase 3 docs for https://oxmode.ai/tai-lieu-nocobase-3/ into a release root.
+# usage: build.sh [release-id]   (env: OUT=release root to write, default ./oxmode/dist)
+# Output: $OUT/tai-lieu-nocobase-3/... and $OUT/tai-lieu-nocobase-3/release.json
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(cd "$HERE/.." && pwd)"
 OUT="${OUT:-$HERE/dist}"
-REL="${1:-$(git -C "$REPO" rev-parse --short HEAD)}"
-DOCS_SITE_ORIGIN=https://docs-build.invalid DOCS_HOSTED_LANGUAGES=vi pnpm --dir "$REPO" --filter @nocobase/docs build
-python3 "$HERE/package_vi.py" "$REPO/docs/dist" "$OUT" --release "$REL"
-"$REPO/docs/node_modules/.bin/pagefind" --site "$OUT/tai-lieu-nocobase" \
-  --exclude-selectors '.oxmode-bar' --output-subdir pagefind
-# Pagefind stores URLs relative to --site and prefixes them at search time with the directory pagefind.js
-# was loaded from (/tai-lieu-nocobase/), so results come back as /tai-lieu-nocobase/<page>.
-du -sh "$OUT"; find "$OUT" -type f | wc -l
+PREFIX="${PREFIX:-tai-lieu-nocobase-3}"
+REL="${1:-$(git -C "$REPO" rev-parse --short=12 HEAD)}"
+rm -rf "$OUT/$PREFIX"
+( cd "$REPO/doc" && [ -d node_modules ] || npm ci --no-audit --no-fund )
+DOCS_BASE="/$PREFIX/" DOCS_SITE_ORIGIN=https://oxmode.ai DOCS_OUT_DIR="$OUT/$PREFIX" node "$REPO/doc/build.mjs"
+printf '{"release": "%s", "built_at": %s}\n' "$REL" "$(date +%s)" > "$OUT/$PREFIX/release.json"
+du -sh "$OUT/$PREFIX"; find "$OUT/$PREFIX" -type f | wc -l

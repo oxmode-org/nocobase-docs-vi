@@ -1,7 +1,7 @@
-"""usage: crawl.py http://127.0.0.1:PORT
+"""usage: crawl.py http://127.0.0.1:PORT [prefix, default tai-lieu-nocobase-3]
 Crawl every page and asset under the prefix; report broken links and requests escaping the prefix."""
 import re, sys, urllib.request, urllib.parse, collections, html
-BASE = sys.argv[1].rstrip('/'); P = '/tai-lieu-nocobase/'
+BASE = sys.argv[1].rstrip('/'); P = '/' + (sys.argv[2] if len(sys.argv) > 2 else 'tai-lieu-nocobase-3').strip('/') + '/'
 start = [BASE + P, BASE + P + 'sitemap.xml']
 src_of = {}
 seen, broken, escaping, external = set(), [], [], collections.Counter()
@@ -30,7 +30,7 @@ while q:
         if '{' in r or r.startswith('width='): continue  # meta viewport etc
         absu = urllib.parse.urljoin(u, r); pu = urllib.parse.urlsplit(absu)
         if pu.scheme not in ('http', 'https'): continue
-        if absu.startswith('https://oxmode.ai/tai-lieu-nocobase/'):
+        if absu.startswith('https://oxmode.ai' + P):
             absu = BASE + absu[len('https://oxmode.ai'):]; pu = urllib.parse.urlsplit(absu)
         if absu.startswith(BASE):
             if not pu.path.startswith(P): escaping.append((absu, u)); continue

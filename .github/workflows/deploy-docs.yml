@@ -1,16 +1,22 @@
-# Build the Vietnamese NocoBase docs and publish them at https://oxmode.ai/tai-lieu-nocobase/.
+# Build the Vietnamese NocoBase 3 docs (fork of nocobase/website-v3 doc/) and publish them at
+# https://oxmode.ai/tai-lieu-nocobase-3/.
 #
 # Server contract (Caddy on the VPS, oxmode.ai block):
-#   @docs path /tai-lieu-nocobase/*  ->  root /srv/oxmode/docs/current, try_files {path} {path}/index.html,
-#   404s under the prefix are served from /tai-lieu-nocobase/404.html with status 404.
-# Layout on the VPS:  $DOCS_PATH/releases/<sha>/tai-lieu-nocobase/...   $DOCS_PATH/current -> releases/<sha>
+#   @docs3 path /tai-lieu-nocobase-3/*  ->  root /srv/oxmode/docs/current, try_files {path} {path}/index.html,
+#   404s under the prefix are served from /tai-lieu-nocobase-3/404.html with status 404.
+#   /tai-lieu-nocobase and /tai-lieu-nocobase/* redirect 301 to the same path under /tai-lieu-nocobase-3/.
+# Layout on the VPS:  $DOCS_PATH/releases/<sha>/tai-lieu-nocobase-3/...   $DOCS_PATH/current -> releases/<sha>
+#
+# Transition: while Caddy still serves the old /tai-lieu-nocobase/ tree from current/, repository variable
+# KEEP_LEGACY_TREE=true hard-links the old tree from the live release into each new release, so swapping
+# current never breaks the old URLs. Unset it once Caddy redirects the old prefix.
 #
 # Secrets: DOCS_DEPLOY_KEY (key of the docsdeploy user), VPS_HOST, VPS_USER, VPS_KNOWN_HOSTS, DOCS_PATH.
 # Repository variable SKIP_PUBLIC_PROBE=true skips the public HTTPS probe (used before Caddy routes the path).
 #
 # Everything runs in one job and nothing is uploaded as an artifact or cache: the org's Actions storage is near
 # its limit.
-name: Deploy docs (tai-lieu-nocobase)
+name: Deploy docs (tai-lieu-nocobase-3)
 
 on:
   push:
@@ -18,7 +24,7 @@ on:
   workflow_dispatch:
     inputs:
       skip_public_probe:
-        description: Skip the public https://oxmode.ai/tai-lieu-nocobase/ probe (server-side checks still run)
+        description: Skip the public https://oxmode.ai/tai-lieu-nocobase-3/ probe (server-side checks still run)
         type: boolean
         default: false
 
@@ -30,8 +36,9 @@ permissions:
   contents: read
 
 env:
-  PREFIX: tai-lieu-nocobase
-  PUBLIC_URL: https://oxmode.ai/tai-lieu-nocobase/
+  PREFIX: tai-lieu-nocobase-3
+  PUBLIC_URL: https://oxmode.ai/tai-lieu-nocobase-3/
+  LEGACY_PREFIX: tai-lieu-nocobase
 
 jobs:
   deploy:
@@ -40,28 +47,28 @@ jobs:
     env:
       DOCS_PATH: ${{ secrets.DOCS_PATH }}
       SKIP_PROBE: ${{ inputs.skip_public_probe == true || vars.SKIP_PUBLIC_PROBE == 'true' }}
+      KEEP_LEGACY: ${{ vars.KEEP_LEGACY_TREE == 'true' }}
     steps:
       - uses: actions/checkout@v4
 
       - id: rel
         run: echo "release=${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
 
-      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
 
       - name: Install docs dependencies
-        run: pnpm install --frozen-lockfile --filter @nocobase/docs...
+        run: npm ci --prefix doc --no-audit --no-fund
 
-      - name: Build, package for /tai-lieu-nocobase/, index search
+      - name: Build for /tai-lieu-nocobase-3/
         run: OUT="$RUNNER_TEMP/release" oxmode/build.sh "${{ steps.rel.outputs.release }}"
 
       - name: Link check (0 broken, 0 requests escaping the prefix)
         run: |
           python3 oxmode/serve.py "$RUNNER_TEMP/release" 8917 &
           for i in $(seq 1 20); do curl -fsS -o /dev/null http://127.0.0.1:8917/$PREFIX/ && break; sleep 0.5; done
-          python3 oxmode/crawl.py http://127.0.0.1:8917
+          python3 oxmode/crawl.py http://127.0.0.1:8917 "$PREFIX"
           test -f "$RUNNER_TEMP/release/$PREFIX/404.html"
           grep -q '"release": "${{ steps.rel.outputs.release }}"' "$RUNNER_TEMP/release/$PREFIX/release.json"
 
@@ -84,8 +91,14 @@ jobs:
           live=$(ssh vps "readlink '$DOCS_PATH/current' || true")
           link=()
           [ -n "$live" ] && [ "$live" != "releases/$RELEASE" ] && link=(--link-dest="$DOCS_PATH/current/")
-          rsync -a --delete --checksum --chmod=D755,F644 "${link[@]}" \
+          # The legacy tree is not part of the build; excluding it keeps --delete from removing it on a re-run.
+          rsync -a --delete --checksum --chmod=D755,F644 --exclude="/$LEGACY_PREFIX/" "${link[@]}" \
             "$RUNNER_TEMP/release/" "vps:$DOCS_PATH/releases/$RELEASE/"
+          if [ "$KEEP_LEGACY" = true ] && [ -n "$live" ] && [ "$live" != "releases/$RELEASE" ]; then
+            ssh vps "test -d '$DOCS_PATH/$live/$LEGACY_PREFIX' && rm -rf '$DOCS_PATH/releases/$RELEASE/$LEGACY_PREFIX' && \
+              cp -al '$DOCS_PATH/$live/$LEGACY_PREFIX' '$DOCS_PATH/releases/$RELEASE/$LEGACY_PREFIX'"
+            echo "kept legacy /$LEGACY_PREFIX/ tree from $live"
+          fi
           # Reset the directory mtime so pruning by age sees the upload time.
           ssh vps "touch '$DOCS_PATH/releases/$RELEASE'"
 
@@ -106,6 +119,10 @@ jobs:
           ssh vps "test \"\$(readlink '$DOCS_PATH/current')\" = 'releases/$RELEASE' && \
             grep -q '\"release\": \"$RELEASE\"' '$DOCS_PATH/current/$PREFIX/release.json' && \
             test -f '$DOCS_PATH/current/$PREFIX/index.html' && test -f '$DOCS_PATH/current/$PREFIX/404.html'"
+          if [ "$KEEP_LEGACY" = true ]; then
+            ssh vps "test -f '$DOCS_PATH/current/$LEGACY_PREFIX/index.html' && test -f '$DOCS_PATH/current/$LEGACY_PREFIX/404.html'"
+            echo "server: legacy /$LEGACY_PREFIX/ tree present"
+          fi
           echo "server: current -> releases/$RELEASE, marker and pages present"
 
       - name: Probe live site

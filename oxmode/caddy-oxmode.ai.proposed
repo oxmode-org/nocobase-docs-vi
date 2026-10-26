@@ -1,0 +1,31 @@
+oxmode.ai {
+	# Tài liệu NocoBase 3 (tiếng Việt)
+	redir /tai-lieu-nocobase-3 /tai-lieu-nocobase-3/ 308
+	@docs3 path /tai-lieu-nocobase-3/*
+	handle @docs3 {
+		root * /srv/oxmode/docs/current
+		try_files {path} {path}/index.html
+		file_server
+	}
+	# Old prefix: 301 to the new prefix. The old pages have no same-path page in the new docs, so the
+	# known sections go to their closest new page; anything else keeps its path (and gets the 404 page).
+	redir /tai-lieu-nocobase /tai-lieu-nocobase-3/ 301
+	redir /tai-lieu-nocobase/ /tai-lieu-nocobase-3/ 301
+	redir /tai-lieu-nocobase/nocobase-2-vs-3* /tai-lieu-nocobase-3/start/from-v2/ 301
+	redir /tai-lieu-nocobase/deployment* /tai-lieu-nocobase-3/core/deployment/choose-a-deployment-method/ 301
+	redir /tai-lieu-nocobase/studio* /tai-lieu-nocobase-3/studio/ 301
+	redir /tai-lieu-nocobase/capabilities* /tai-lieu-nocobase-3/core/ 301
+	@docsOld path_regexp docsOld ^/tai-lieu-nocobase(/.*)$
+	redir @docsOld /tai-lieu-nocobase-3{re.docsOld.1} 301
+	handle {
+		reverse_proxy 127.0.0.1:14000
+	}
+	handle_errors 404 {
+		@docs404 path /tai-lieu-nocobase-3/*
+		handle @docs404 {
+			root * /srv/oxmode/docs/current
+			rewrite * /tai-lieu-nocobase-3/404.html
+			file_server
+		}
+	}
+}

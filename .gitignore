@@ -1,5 +1,2 @@
+dist/
 node_modules/
-docs/dist/
-docs/.astro/
-oxmode/dist/
-__pycache__/

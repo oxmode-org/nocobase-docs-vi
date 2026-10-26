@@ -1,1 +1,0 @@
-{"version":3,"file":"react-setup.js","sourceRoot":"","sources":["../../vitest/react-setup.ts"],"names":[],"mappings":"AAAA,OAAO,kCAAkC,CAAC;AAC1C,OAAO,EAAE,OAAO,EAAE,SAAS,EAAE,MAAM,wBAAwB,CAAC;AAC5D,OAAO,EAAE,SAAS,EAAE,MAAM,QAAQ,CAAC;AAEnC,oFAAoF;AACpF,SAAS,CAAC,EAAE,gBAAgB,EAAE,IAAI,EAAE,CAAC,CAAC;AAEtC,SAAS,CAAC,OAAO,CAAC,CAAC"}

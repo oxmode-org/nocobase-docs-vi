@@ -1,8 +1,0 @@
-# Lock files
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
-
-# Build output and Astro's generated types
-dist/
-.astro/
