@@ -79,9 +79,12 @@ jobs:
           RELEASE: ${{ steps.rel.outputs.release }}
         run: |
           ssh vps "mkdir -p '$DOCS_PATH/releases/$RELEASE'"
-          # Hard-link unchanged files against the live release so each release costs only what changed.
-          rsync -a --delete --checksum --chmod=D755,F644 \
-            --link-dest="$DOCS_PATH/current/" \
+          # Hard-link unchanged files against the live release so each release costs only what changed;
+          # a re-run of the live release uploads into itself, so it gets no link-dest.
+          live=$(ssh vps "readlink '$DOCS_PATH/current' || true")
+          link=()
+          [ -n "$live" ] && [ "$live" != "releases/$RELEASE" ] && link=(--link-dest="$DOCS_PATH/current/")
+          rsync -a --delete --checksum --chmod=D755,F644 "${link[@]}" \
             "$RUNNER_TEMP/release/" "vps:$DOCS_PATH/releases/$RELEASE/"
           # Reset the directory mtime so pruning by age sees the upload time.
           ssh vps "touch '$DOCS_PATH/releases/$RELEASE'"
