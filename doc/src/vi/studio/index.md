@@ -15,5 +15,3 @@ description: NocoBase Studio là nền tảng quản trị cho con người và 
 | Chăm sóc một dự án | [Quản lý dự án](project/settings.md): Skill, cơ sở tri thức, kiểm tra và review, bộ nhớ dự án, duyệt phát hành, tiến độ và mức sử dụng. |
 | Quản trị Studio | [Quản trị hệ thống](admin/environments.md): môi trường triển khai, thành viên và vai trò, API key, thông báo, nâng cấp và sao lưu. |
 | Tra cứu chi tiết | [Tham khảo](reference/statuses-and-permissions.md): trạng thái issue và phân quyền, các lệnh `nb-studio`, cấu hình và xử lý sự cố. |
-
-Các trang có nhãn **EN** ở menu bên trái chưa được dịch và đang hiển thị bản tiếng Anh gốc.

@@ -37,5 +37,3 @@ Tra cứu các quy ước của ứng dụng theo chủ đề; chuẩn bị dữ
 - [Triển khai lên Studio](tutorials/deploy-to-studio.md): quản lý ứng dụng, môi trường và bản phát hành trong Studio.
 - [Nâng cấp NocoBase Core](developing-apps/upgrade-nocobase-core.md): hợp nhất template mới hơn cùng Agent hoặc thủ công, kiểm tra tương thích và triển khai ứng dụng đã nâng cấp.
 - [Phát hành phiên bản ứng dụng](deployment/publish-app-release.md): build lại và triển khai lại, với các bước cập nhật cho từng cách triển khai.
-
-Lưu ý: các trang có nhãn **EN** ở menu bên trái chưa được dịch và đang hiển thị bản tiếng Anh gốc.

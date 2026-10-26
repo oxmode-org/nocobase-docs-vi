@@ -37,4 +37,4 @@ description: NocoBase là nền tảng mã nguồn mở để xây dựng, vận
 - Tài liệu được viết theo giao diện tiếng Anh. Tên giao diện có sẵn trong sản phẩm được in **đậm** và đường dẫn được viết dạng **A › B**, ví dụ **System settings › User management**.
 - Mọi gói NocoBase 3 hiện đều ở giai đoạn beta, nên API và giao diện vẫn có thể thay đổi. Sản phẩm là nguồn chính xác nhất.
 - Các trang hiển thị màu nhạt ở menu bên trái là trang chưa được viết.
-- Bản tiếng Việt do OXMODE biên dịch từ [tài liệu chính thức](https://docs.nocobase.com/). Các trang có nhãn **EN** ở menu chưa được dịch và đang hiển thị bản tiếng Anh gốc.
+- Bản tiếng Việt do OXMODE biên dịch từ [tài liệu chính thức](https://docs.nocobase.com/). Toàn bộ các trang của NocoBase 3 đã được dịch sang tiếng Việt; tên giao diện trong sản phẩm vẫn giữ tiếng Anh như bản gốc.
