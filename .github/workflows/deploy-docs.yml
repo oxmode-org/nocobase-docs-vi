@@ -91,8 +91,11 @@ jobs:
           live=$(ssh vps "readlink '$DOCS_PATH/current' || true")
           link=()
           [ -n "$live" ] && [ "$live" != "releases/$RELEASE" ] && link=(--link-dest="$DOCS_PATH/current/")
-          # The legacy tree is not part of the build; excluding it keeps --delete from removing it on a re-run.
-          rsync -a --delete --checksum --chmod=D755,F644 --exclude="/$LEGACY_PREFIX/" "${link[@]}" \
+          # The legacy tree is not part of the build. While it is kept, excluding it stops --delete from removing
+          # it on a re-run; once KEEP_LEGACY_TREE is unset, --delete removes it from a re-deployed release too.
+          keep=()
+          [ "$KEEP_LEGACY" = true ] && keep=(--exclude="/$LEGACY_PREFIX/")
+          rsync -a --delete --checksum --chmod=D755,F644 "${keep[@]}" "${link[@]}" \
             "$RUNNER_TEMP/release/" "vps:$DOCS_PATH/releases/$RELEASE/"
           if [ "$KEEP_LEGACY" = true ] && [ -n "$live" ] && [ "$live" != "releases/$RELEASE" ]; then
             ssh vps "test -d '$DOCS_PATH/$live/$LEGACY_PREFIX' && rm -rf '$DOCS_PATH/releases/$RELEASE/$LEGACY_PREFIX' && \
@@ -122,6 +125,9 @@ jobs:
           if [ "$KEEP_LEGACY" = true ]; then
             ssh vps "test -f '$DOCS_PATH/current/$LEGACY_PREFIX/index.html' && test -f '$DOCS_PATH/current/$LEGACY_PREFIX/404.html'"
             echo "server: legacy /$LEGACY_PREFIX/ tree present"
+          else
+            ssh vps "test ! -e '$DOCS_PATH/current/$LEGACY_PREFIX'"
+            echo "server: no legacy /$LEGACY_PREFIX/ tree"
           fi
           echo "server: current -> releases/$RELEASE, marker and pages present"
 
