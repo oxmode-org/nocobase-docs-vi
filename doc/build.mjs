@@ -28,6 +28,10 @@ const LANDINGS = { vi: landingVi };
 const LUCIDE = 'https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js';
 // 样式表和脚本的地址带上内容的版本号，改了样式后浏览器不会继续用缓存里的旧文件
 const VERSION = createHash('sha1').update(readFileSync(join(dir, 'assets/docs.css'))).update(readFileSync(join(dir, 'assets/docs.js'))).digest('hex').slice(0, 8);
+// Share card (Facebook, Zalo, LinkedIn, X): one 1200×630 image for every page, source in oxmode/og/. The version in its
+// URL changes with the file, so Facebook fetches the new image instead of a cached one.
+const OG_IMAGE = { file: 'assets/og-default.png', width: 1200, height: 630, alt: 'Tài liệu NocoBase 3 tiếng Việt, do OXMODE biên dịch' };
+const OG_VERSION = createHash('sha1').update(readFileSync(join(dir, OG_IMAGE.file))).digest('hex').slice(0, 8);
 const escape = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
 // 站点域名只能是 origin：带路径、查询串或片段都报错，避免 canonical、sitemap 拼出错误的地址
@@ -317,7 +321,7 @@ function render(markdown, { lang, ui, resolveLink = (href) => href }) {
 
 /* ---------- 页面外壳 ---------- */
 // head 是 canonical、hreflang 等额外的 <head> 内容；base 是资源的前缀，文档站用根路径 /
-function shell({ lang, title, description, crumb, body, toc, menu, pager, base, home, tabs = '', head = '', switcher = '', robots = '', landing = '' }) {
+function shell({ lang, title, description, metaDescription = description, crumb, body, toc, menu, pager, base, home, tabs = '', head = '', switcher = '', robots = '', landing = '' }) {
   const { ui } = lang;
   const intro = `${crumb ? `<p class="crumb">${escape(crumb)}</p>` : ''}<h1>${escape(title)}</h1>
 ${description ? `<p class="lead">${escape(description)}</p>` : ''}`;
@@ -341,7 +345,7 @@ ${body}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escape(title)} - ${escape(ui.site)}</title>
-<meta name="description" content="${escape(description || title)}">
+<meta name="description" content="${escape(metaDescription || title)}">
 ${robots ? `<meta name="robots" content="${robots}">\n` : ''}${head}<link rel="icon" type="image/png" sizes="32x32" href="https://static-docs.nocobase.com/nocobase-favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://static-docs.nocobase.com/nocobase-favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="https://static-docs.nocobase.com/nocobase-apple-touch-icon.png">
@@ -439,17 +443,46 @@ const alternatesOf = (key) => [
   ...LANGS.filter((l) => pages.get(l.code).has(key) && !pages.get(l.code).get(key).meta.fallback).map((l) => ({ lang: l, url: absolute(urlOf(l, key)) })),
   ...UPSTREAM_LANGS.map((l) => ({ lang: l, url: upstreamUrlOf(l, key) })),
 ];
-const headOf = (lang, key, title) => {
+// Plain-text summary for share cards and search snippets: the front matter description, otherwise the first paragraph.
+function summaryOf(meta, body) {
+  if (meta.description) return meta.description;
+  const paragraph = body.replace(FIGURE_LINE, '').split(/\n\s*\n/).map((b) => b.trim())
+    .find((b) => b && !/^(#|>|```|<|[-*+] |\d+\. |\|)/.test(b)) || '';
+  const text = paragraph.replace(/!?\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[`*_]/g, '').replace(/\s+/g, ' ').trim().replace(/:$/, '');
+  return text.length > 200 ? `${text.slice(0, 197).replace(/\s+\S*$/, '')}…` : text;
+}
+// Open Graph and Twitter card tags. og:title carries the docs name on inner pages, because a shared link shows only the title.
+const shareOf = (lang, key, title, description) => {
+  const url = absolute(urlOf(lang, key));
+  const image = `${absolute(BASE + OG_IMAGE.file)}?v=${OG_VERSION}`;
+  const shareTitle = key === 'index' ? 'Tài liệu NocoBase 3 tiếng Việt' : `${title} · ${lang.ui.docs}`;
+  return [
+    `<meta property="og:type" content="${key === 'index' || key.endsWith('/index') ? 'website' : 'article'}">`,
+    `<meta property="og:site_name" content="OXMODE">`,
+    `<meta property="og:locale" content="vi_VN">`,
+    `<meta property="og:url" content="${url}">`,
+    `<meta property="og:title" content="${escape(shareTitle)}">`,
+    `<meta property="og:description" content="${escape(description || title)}">`,
+    `<meta property="og:image" content="${image}">`,
+    `<meta property="og:image:secure_url" content="${image}">`,
+    `<meta property="og:image:type" content="image/png">`,
+    `<meta property="og:image:width" content="${OG_IMAGE.width}">`,
+    `<meta property="og:image:height" content="${OG_IMAGE.height}">`,
+    `<meta property="og:image:alt" content="${escape(OG_IMAGE.alt)}">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escape(shareTitle)}">`,
+    `<meta name="twitter:description" content="${escape(description || title)}">`,
+    `<meta name="twitter:image" content="${image}">`,
+    `<meta name="twitter:image:alt" content="${escape(OG_IMAGE.alt)}">`,
+  ];
+};
+const headOf = (lang, key, title, description) => {
   const alternates = alternatesOf(key);
   return [
     `<link rel="canonical" href="${absolute(urlOf(lang, key))}">`,
     ...alternates.map((a) => `<link rel="alternate" hreflang="${a.lang.code}" href="${a.url}">`),
     `<link rel="alternate" hreflang="x-default" href="${upstreamUrlOf(UPSTREAM_LANGS[0], key)}">`,
-    `<meta property="og:type" content="website">`,
-    `<meta property="og:site_name" content="${escape(lang.ui.site)}">`,
-    `<meta property="og:title" content="${escape(title)}">`,
-    `<meta property="og:url" content="${absolute(urlOf(lang, key))}">`,
-    `<meta property="og:locale" content="${lang.code.replace('-', '_')}">`,
+    ...shareOf(lang, key, title, description),
   ].join('\n') + '\n';
 };
 // 语言菜单：悬停或聚焦时展开，列出全部语言，当前语言打勾；某种语言没有这一页时链到它的首页
@@ -509,12 +542,14 @@ for (const lang of LANGS) {
       markdown = ui.fallback(upstreamUrlOf(UPSTREAM_LANGS[0], key)) + markdown;
     }
     const r = render(markdown, { lang, ui, resolveLink: linkResolver(lang, key) });
+    const summary = summaryOf(meta, info.body);
     const out = htmlFileOf(lang, key);
     mkdirSync(dirname(out), { recursive: true });
     writeFileSync(out, shell({
       lang,
       title: meta.title,
       description: meta.description,
+      metaDescription: summary,
       crumb: [section.key === 'start' ? '' : textOf(section.title, lang), textOf(info.group, lang)].filter(Boolean).join(' · '),
       body: (meta.fallback ? r.html.replace(/(<\/div>\n)/, '$1<div lang="en">') + '</div>' : r.html).replaceAll('{{base}}', BASE),
       toc: tocOf(r.headings, ui),
@@ -523,7 +558,7 @@ for (const lang of LANGS) {
       pager,
       base: BASE,
       home: urlOf(lang, 'index'),
-      head: headOf(lang, key, meta.title),
+      head: headOf(lang, key, meta.title, summary),
       switcher: switcherOf(lang, key),
       landing: key === 'index' && LANDINGS[lang.code] ? LANDINGS[lang.code]({
         href: (page, hash) => `${urlOf(lang, page)}${hash ? `#${encodeURIComponent(hash)}` : ''}`,
