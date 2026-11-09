@@ -528,7 +528,7 @@ for (const lang of LANGS) {
         return { key: p, href: urlOf(lang, p), label: m.nav || m.title, todo: Boolean(m.status), fallback: Boolean(m.fallback) };
       }),
     })), key);
-    const tabs = SECTIONS.map((s) => `<a href="${urlOf(lang, `${s.dir}index`)}"${s === section ? ' aria-current="true"' : ''}>${escape(textOf(s.title, lang))}</a>`).join('');
+    const tabs = SECTIONS.map((s) => `<a href="${urlOf(lang, s.home || `${s.dir}index`)}"${s === section ? ' aria-current="true"' : ''}>${escape(textOf(s.title, lang))}</a>`).join('');
     // 上一页 / 下一页只在同一部分里、已经写好的页面之间跳
     const i = section.order.indexOf(key);
     const link = (p) => p && { href: urlOf(lang, p), title: langPages.get(p).meta.title };
@@ -585,8 +585,8 @@ for (const lang of LANGS) {
     description: lead,
     body: `<p><a href="${home}">${escape(back)}</a></p>`,
     toc: '',
-    menu: menuOf([{ items: SECTIONS.map((s) => ({ key: s.key, href: urlOf(lang, `${s.dir}index`), label: textOf(s.title, lang) })) }], ''),
-    tabs: SECTIONS.map((s) => `<a href="${urlOf(lang, `${s.dir}index`)}">${escape(textOf(s.title, lang))}</a>`).join(''),
+    menu: menuOf([{ items: SECTIONS.map((s) => ({ key: s.key, href: urlOf(lang, s.home || `${s.dir}index`), label: textOf(s.title, lang) })) }], ''),
+    tabs: SECTIONS.map((s) => `<a href="${urlOf(lang, s.home || `${s.dir}index`)}">${escape(textOf(s.title, lang))}</a>`).join(''),
     pager: '',
     base: BASE,
     home,
