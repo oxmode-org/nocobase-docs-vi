@@ -40,11 +40,11 @@ if missing and not A.preview: raise SystemExit(f'Release blocked: {len(missing)}
 # Mirror the pinned upstream's documented order and grouping; keep all 199 paths.
 import re
 names={'Introduction':'Giới thiệu','Hands-on':'Thực hành','More':'Tìm hiểu thêm','Developing apps':'Phát triển ứng dụng','Using plugins':'Sử dụng plugin','Developing plugins':'Phát triển plugin','Framework':'Framework','Deployment and operations':'Triển khai và vận hành','Reference':'Tham khảo','Install and configure':'Cài đặt và cấu hình','Get started':'Bắt đầu','Task development':'Phát triển tác vụ','Project management':'Quản lý dự án','Agent management':'Quản lý Agent','Quality management':'Quản lý chất lượng','Release management':'Quản lý bản phát hành','Administration':'Quản trị','Getting started':'Bắt đầu','Part 1: Build an app with Core':'Phần 1: Xây dựng ứng dụng với Core','Part 2: Use Studio in a team':'Phần 2: Dùng Studio trong nhóm','Best practices':'Các phương pháp tốt','Appendix':'Phụ lục','Tutorials':'Hướng dẫn','FAQ':'Câu hỏi thường gặp'}
-sections=[{'key':'start','title':'Bắt đầu','dir':'','nav':[{'items':['index']}]},{'key':'core','title':'Core','dir':'core/','nav':[]},{'key':'tutorials','title':'Tutorials','dir':'guides/','home':'guides/build-reliable-enterprise-apps','nav':[]},{'key':'studio','title':'Studio','dir':'studio/','nav':[]}]
+sections=[{'key':'start','title':'Bắt đầu','dir':'','nav':[{'items':['index']}]},{'key':'core','title':'Core','dir':'core/','nav':[]},{'key':'studio','title':'Studio','dir':'studio/','nav':[]},{'key':'tutorials','title':'Tutorials','dir':'guides/','home':'guides/build-reliable-enterprise-apps','nav':[]}]
 current=None; group=None
 for line in (UP/'upstream-llms.txt').read_text().splitlines():
     if line.startswith('## '):
-        name=line[3:]; current=sections[1] if name=='Core' else sections[2] if name=='Tutorials' else sections[3] if name=='Studio' else sections[0]
+        name=line[3:]; current=sections[1] if name=='Core' else sections[3] if name=='Tutorials' else sections[2] if name=='Studio' else sections[0]
         group={'title':names.get(name,name),'items':[]}; current['nav'].append(group)
     elif line.startswith('### '):
         name=line[4:]; group={'title':names.get(name,name),'items':[]}; current['nav'].append(group)
