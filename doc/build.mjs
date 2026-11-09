@@ -130,7 +130,7 @@ const SECTIONS = [
       {
         title: ['Extension development', '扩展开发'],
         items: [
-          { planned: ['When to write a plugin', '什么时候写插件'] },
+          'extension-development/when-to-write-a-plugin',
           { planned: ['Create a plugin', '创建插件'] },
           { planned: ['Plugin structure', '插件的结构'] },
           { planned: ['Publish a plugin', '发布插件'] },

@@ -1,0 +1,283 @@
+# NocoBase 3 Docs
+
+> NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the business code, NocoBase provides the foundation and governance, and people set goals and make the decisions.
+
+## Getting started
+
+### Introduction
+
+- [What is NocoBase 3](https://docs.nocobase.com/getting-started/what-is-nocobase.md): NocoBase 3 is the open-source platform for building, running, and evolving business systems with AI, with an application foundation, development governance, and customizable business apps.
+
+### Hands-on
+
+- [Develop your first app](https://docs.nocobase.com/getting-started/develop-your-first-app.md): Create and start a NocoBase app, develop customer management with an agent, check permissions, and keep iterating.
+- [Collaborate with Studio](https://docs.nocobase.com/getting-started/collaborate-with-studio.md): Submit a request in Studio, follow Agent handoffs and reviews, accept the result, and deliver a release.
+
+### More
+
+- [Learning path](https://docs.nocobase.com/getting-started/learning-path.md): Explore the documentation map and reading routes for applications, Studio, complete projects, and deployment.
+
+## Core
+
+- [NocoBase Core](https://docs.nocobase.com/core/index.md)
+
+### Developing apps
+
+- [Application development overview](https://docs.nocobase.com/core/developing-apps/overview.md): Understand the parts of a NocoBase application, how to implement business features, where code belongs, and how to develop with an Agent.
+- [Project structure](https://docs.nocobase.com/core/developing-apps/project-structure.md): Find the pages, APIs, migrations, tests and plugins in your application.
+- [Pages, routes and navigation](https://docs.nocobase.com/core/developing-apps/pages-routes-and-navigation.md): Use a dedicated routing app to learn page registration, parameters, drawers and dialogs, tabs, navigation, breadcrumbs, access control and component overrides.
+- [UI components and interactions](https://docs.nocobase.com/core/developing-apps/pages-and-interactions.md): Follow shadcn conventions and integrate NocoBase UI Library source components, business blocks, route dialogs and application context.
+- [Data requests and state](https://docs.nocobase.com/core/developing-apps/data-requests-and-state.md): Use the application API Client, template list hooks, and useSubmission to synchronize queries, handle request races, recover submissions, and refresh saved data.
+- [Page layouts](https://docs.nocobase.com/core/developing-apps/page-layouts.md): Compose page containers, responsive columns, application shells and child views using a product catalog example, with predictable scrolling and navigation.
+- [Localization](https://docs.nocobase.com/core/developing-apps/localization.md): Organize application translations, format localized data, add languages and configure the default locale.
+- [Themes and styles](https://docs.nocobase.com/core/developing-apps/themes-and-styles.md): Build components with semantic styles, customize theme presets, switch appearance through hooks, and configure defaults for new visitors.
+- [Client services](https://docs.nocobase.com/core/developing-apps/client-business-services.md): Register and consume NocoBase client services, inject the API Client, subscribe to shared state, and manage cancellation and cleanup.
+- [HTTP routes and APIs](https://docs.nocobase.com/core/developing-apps/apis-and-services.md): Register server Web routes, custom APIs and Repository data endpoints for pages, redirects, downloads, permissions and API documentation.
+- [Server-side services](https://docs.nocobase.com/core/developing-apps/server-business-services.md): Define and register reusable services, call them from HTTP, application commands and jobs, and manage policies, transactions and lifecycle.
+- [Request validation and error handling](https://docs.nocobase.com/core/developing-apps/request-validation-and-errors.md): Validate request input, distinguish field errors from business failures and unexpected exceptions, and verify responses and stored data with an order API.
+- [Authentication, permissions and data scopes](https://docs.nocobase.com/core/developing-apps/authentication-and-permissions.md): Authenticate application endpoints, declare business operations, and enforce record and field access through Repository policies.
+- [Background jobs and scheduled execution](https://docs.nocobase.com/core/developing-apps/background-tasks.md): Define and submit background jobs, configure schedules, retries and graceful recovery, and choose an execution backend.
+- [Server localization](https://docs.nocobase.com/core/developing-apps/server-localization.md): Configure server locale resources, choose request and recipient languages, override plugin wording and return localized error messages.
+- [Create tables and initialize data](https://docs.nocobase.com/core/developing-apps/data-models-and-migrations.md): Create an application status dictionary, install defaults and maintain later changes through new migrations and real database tests.
+- [Querying and manipulating data](https://docs.nocobase.com/core/developing-apps/querying-data.md): Use Repositories for business records, relations, pagination, transactions and bulk operations, and decide when to use Query.
+- [Transactions and data consistency](https://docs.nocobase.com/core/developing-apps/transactions-and-consistency.md): Define service transaction boundaries and verify rollback, concurrency and cross-connection or external effects.
+- [Multiple database connections](https://docs.nocobase.com/core/developing-apps/multiple-databases.md): Configure named connections, organize their migrations and Seeds, and select connections explicitly at runtime.
+- [Connect an existing database](https://docs.nocobase.com/core/developing-apps/existing-databases.md): Connect to an externally managed schema, supply metadata and relations, and verify naming and access permissions.
+- [Write application commands](https://docs.nocobase.com/core/developing-apps/application-commands.md): Write AppCommand classes in cli/commands, access application services, handle paths and JSON output, and verify commands in a deployment.
+- [Integrate plugin commands](https://docs.nocobase.com/core/developing-apps/plugin-commands.md): Register existing plugin commands through cli/plugins.ts and verify namespaces, development commands, build hooks and deployment behavior.
+- [Provide an application CLI client](https://docs.nocobase.com/core/developing-apps/cli-client.md): Give an application a standalone CLI using app-cli-client, connect to server business APIs, and test and package it for distribution.
+- [Application configuration (config.yml)](https://docs.nocobase.com/core/developing-apps/configuration-and-settings.md): Modify config.yml, understand client and server code configuration, and add a configuration section with overrides, validation and public fields.
+- [Testing](https://docs.nocobase.com/core/developing-apps/testing-and-acceptance.md): Test components, APIs, commands, and databases, then verify the UI and complete workflows with Playwright, an Agent, and manual checks.
+
+### Using plugins
+
+- [Using plugins overview](https://docs.nocobase.com/core/using-plugins/overview.md): Find NocoBase plugins by function and learn about their purposes, configuration and usage.
+- [Manage plugins](https://docs.nocobase.com/core/developing-apps/manage-plugins.md): Inspect registered plugins, use existing capabilities, and manage registration, updates, removal and extension points.
+- [User management](https://docs.nocobase.com/core/using-plugins/authentication/users.md): Integrate user administration, invitations, role assignments and preferences.
+- [Authentication](https://docs.nocobase.com/core/using-plugins/authentication/sign-in.md): Configure application sign-in, sessions, registration and password recovery.
+- [API keys](https://docs.nocobase.com/core/using-plugins/authentication/api-keys.md): Issue and revoke API keys and constrain integration permissions.
+- [Permission management](https://docs.nocobase.com/core/using-plugins/authorization/permissions.md): Configure permission sets, page and business access, and server-side data policies.
+- [Default data access](https://docs.nocobase.com/core/using-plugins/authorization/default-access.md): Configure default data access while preserving operation permissions.
+- [Sharing rules](https://docs.nocobase.com/core/using-plugins/authorization/sharing-rules.md): Configure sharing rules while preserving operation permissions.
+- [Restriction rules](https://docs.nocobase.com/core/using-plugins/authorization/restriction-rules.md): Configure restriction rules while preserving operation permissions.
+- [Database explorer](https://docs.nocobase.com/core/using-plugins/data-and-files/database-explorer.md): Inspect application connections, Collection definitions and physical schemas.
+- [Files](https://docs.nocobase.com/core/using-plugins/data-and-files/file-management.md): Integrate file uploads, metadata, content access and previews.
+- [Notifications](https://docs.nocobase.com/core/using-plugins/notifications/notification.md): Send notifications through named channels and inspect delivery outcomes.
+- [Notification providers](https://docs.nocobase.com/core/using-plugins/notifications/providers.md): Configure SMTP, Resend, Feishu and DingTalk notification channels.
+- [In-app notifications](https://docs.nocobase.com/core/using-plugins/notifications/in-app.md): Deliver in-app messages and integrate an inbox, unread counts and refresh.
+- [Web push](https://docs.nocobase.com/core/using-plugins/notifications/web-push.md): Configure browser subscriptions, device preferences and Web Push delivery.
+- [Email](https://docs.nocobase.com/core/using-plugins/notifications/mail.md): Connect personal mailboxes, synchronize messages and compose email workflows.
+- [Agents](https://docs.nocobase.com/core/using-plugins/agents-and-knowledge/agents.md): Add AI chat, business Skills and coding agents on machines to your app, with setup steps, key code and verification guidance.
+- [Knowledge base](https://docs.nocobase.com/core/using-plugins/agents-and-knowledge/knowledge.md): Integrate spaces, document versions, search, permissions and change review.
+- [Approvals (commercial)](https://docs.nocobase.com/core/using-plugins/collaboration/approval.md): Connect human approval to record lifecycles, participants, policies and outcomes.
+- [Scheduled tasks](https://docs.nocobase.com/core/using-plugins/automation/scheduler.md): Declare business schedules, inspect occurrences and control execution.
+- [Template printing](https://docs.nocobase.com/core/using-plugins/automation/template-print.md): Use plugin Skills to implement DOCX templates and PDF output in an application.
+- [Localization](https://docs.nocobase.com/core/using-plugins/application-support/i18n.md): Integrate language switching and synchronize browser and server locale preferences.
+- [Application foundation](https://docs.nocobase.com/core/using-plugins/application-support/foundation.md): Inspect integrated Core capabilities, usage evidence and business-module associations.
+
+### Developing plugins
+
+- [When to write a plugin](https://docs.nocobase.com/core/extension-development/when-to-write-a-plugin.md): Use plugins to reuse code or organize features into modules that are easier to install and maintain.
+- [Create a plugin](https://docs.nocobase.com/core/extension-development/create-plugin.md): Use @nocobase/create-plugin inside an existing App to generate a local plugin scaffold, select capabilities and connect the workspace, with or without an agent.
+- [Plugin structure](https://docs.nocobase.com/core/extension-development/plugin-structure.md): Understand where plugins live in an App, how directories and entries connect, and how source relates to build output.
+- [Plugin development guidance (AGENTS.md)](https://docs.nocobase.com/core/extension-development/plugin-development-guidance.md): Maintain plugin responsibilities, change conventions, compatibility requirements and verification steps in AGENTS.md for Agents working on plugin source.
+- [Write your first plugin](https://docs.nocobase.com/core/extension-development/write-your-first-plugin.md): Build an announcements plugin in an App, covering its API, page, navigation, tests and registration.
+- [Plugin declarations and public exports](https://docs.nocobase.com/core/extension-development/plugin-declarations.md): Declare a plugin's Client, Server and CLI contributions, expose public entries, and integrate with applications and other plugins.
+- [Pages, routes and menus](https://docs.nocobase.com/core/extension-development/pages-and-menus.md): Add plugin pages, navigation and nested views in an App, with default routes and access rules.
+- [Components and styles](https://docs.nocobase.com/core/extension-development/frontend-components.md): Organize plugin components, integrate host styles and themes, expose components and optionally distribute UI source assets.
+- [React Context and Providers](https://docs.nocobase.com/core/extension-development/react-context-and-providers.md): Define plugin display preferences, contribute a React Provider and verify shared state and mounting scope.
+- [Client services](https://docs.nocobase.com/core/extension-development/client-services.md): Contribute a plugin Client service, share it through a Token and bridge change subscriptions into React.
+- [Client localization](https://docs.nocobase.com/core/extension-development/localization.md): Organize Client resources, namespaces and public components, and verify rendering and language changes.
+- [Routes and HTTP APIs](https://docs.nocobase.com/core/extension-development/server-apis.md): Add plugin endpoints with validation, response contracts, access control and tests.
+- [Business services and ServiceProvider](https://docs.nocobase.com/core/extension-development/server-services.md): Organize plugin service implementations, Tokens and Providers and expose contracts to APIs, commands and other plugins.
+- [Background jobs and executors](https://docs.nocobase.com/core/extension-development/background-jobs.md): Define a plugin announcement-summary job, obtain an executor from the App and register, enqueue and release owned resources.
+- [Server localization](https://docs.nocobase.com/core/extension-development/server-localization.md): Declare plugin Server resources and use the correct namespace and language in requests and background jobs.
+- [Database resources and migrations](https://docs.nocobase.com/core/extension-development/database-and-migrations.md): Declare plugin migration and Seed directories, integrate with the application default connection, and verify builds, installation and upgrades.
+- [Command-line extensions](https://docs.nocobase.com/core/extension-development/extend-command-line.md): Register plugin commands with arguments, JSON output, errors and build hooks.
+- [Plugin Skills](https://docs.nocobase.com/core/extension-development/write-plugin-skills.md): Describe public capabilities for App Agents and maintain, synchronize and verify plugin Skills.
+- [Testing and verification](https://docs.nocobase.com/core/extension-development/testing-and-verification.md): Separate plugin tests, App integration and delivery checks around observable behavior.
+- [Build and publish](https://docs.nocobase.com/core/extension-development/publish-plugin.md): Local plugins build and deploy with the App. Publish to a private npm registry when other applications need to share them.
+
+### Framework
+
+- [Framework overview](https://docs.nocobase.com/core/framework/overview.md)
+- [Client runtime](https://docs.nocobase.com/core/framework/runtime/client.md)
+- [Server runtime](https://docs.nocobase.com/core/framework/runtime/server.md)
+- [Command-line runtime](https://docs.nocobase.com/core/framework/runtime/cli.md)
+- [Application startup and lifecycle](https://docs.nocobase.com/core/framework/runtime/lifecycle.md)
+- [Plugin loading and extensions](https://docs.nocobase.com/core/framework/runtime/plugins.md)
+- [React Provider registration and mounting](https://docs.nocobase.com/core/framework/runtime/react-providers.md)
+- [Service containers](https://docs.nocobase.com/core/framework/services/container.md)
+- [Service contracts and tokens](https://docs.nocobase.com/core/framework/services/tokens.md)
+- [ServiceProviders and service lifecycle](https://docs.nocobase.com/core/extension-development/service-provider.md): Understand service contracts, Tokens, registration and lifecycle on both Client and Server.
+- [Client and server service integration](https://docs.nocobase.com/core/framework/services/integration.md): Integrate shared service contracts with client and server containers and clarify application, plugin, request and component ownership.
+- [Routes and request context](https://docs.nocobase.com/core/framework/http/routes.md)
+- [Middleware](https://docs.nocobase.com/core/framework/http/middleware.md)
+- [Request validation and responses](https://docs.nocobase.com/core/framework/http/validation.md)
+- [Repository data APIs](https://docs.nocobase.com/core/framework/http/repository-routes.md)
+- [API Client](https://docs.nocobase.com/core/framework/http/api-client.md)
+- [Database overview](https://docs.nocobase.com/core/framework/database/overview.md)
+- [Connections and database dialects](https://docs.nocobase.com/core/framework/database/connections.md)
+- [Tables and fields](https://docs.nocobase.com/core/framework/database/schema.md): Create and change Collections, fields, indexes and constraints with CollectionBuilder, including naming, metadata and database capabilities.
+- [Relationships and associations](https://docs.nocobase.com/core/framework/database/relations.md): Define belongsTo, hasOne, hasMany and belongsToMany relations with explicit foreign-key fields, indexes and constraints.
+- [Repositories and data operations](https://docs.nocobase.com/core/framework/database/repositories.md)
+- [Filtering, sorting and pagination](https://docs.nocobase.com/core/framework/database/filtering-pagination.md)
+- [Association queries](https://docs.nocobase.com/core/framework/database/association-queries.md)
+- [Aggregation and statistics](https://docs.nocobase.com/core/framework/database/aggregation.md)
+- [Transactions](https://docs.nocobase.com/core/framework/database/transactions.md)
+- [Database migrations](https://docs.nocobase.com/core/framework/database/migrations.md): Define migrations, change schema and historical data through Migration Context, and understand ordering, transactions, rollback and checksums.
+- [Seed data](https://docs.nocobase.com/core/framework/database/seeds.md): Install defaults with defineSeed, handling existing records, configuration, optional samples, history and retries.
+- [Query inputs and builders](https://docs.nocobase.com/core/framework/database/query-inputs.md)
+- [Caching](https://docs.nocobase.com/core/framework/support/caching.md)
+- [File storage and drivers](https://docs.nocobase.com/core/framework/file-storage.md)
+- [Background jobs and executors](https://docs.nocobase.com/core/framework/background/jobs.md)
+- [Periodic scheduling](https://docs.nocobase.com/core/framework/background/scheduling.md)
+- [Message queues](https://docs.nocobase.com/core/framework/background/queues.md)
+- [Realtime messages and topic subscriptions](https://docs.nocobase.com/core/framework/realtime/topics.md)
+- [WebSocket protocols and adapters](https://docs.nocobase.com/core/framework/realtime/websocket.md)
+- [Logging](https://docs.nocobase.com/core/framework/support/logging.md)
+- [ID generation](https://docs.nocobase.com/core/framework/support/ids.md)
+
+### Deployment and operations
+
+- [Choose a deployment method](https://docs.nocobase.com/core/deployment/choose-a-deployment-method.md): Deploy a production application independently with Docker or PM2 (app-installer), with separate runtime configuration, persistent data, and subsequent updates.
+- [Publish an application release](https://docs.nocobase.com/core/deployment/publish-app-release.md): Rebuild after changing your code, then update the existing application using its original deployment method.
+- [Deploy with Docker](https://docs.nocobase.com/core/tutorials/deploy-with-docker.md): Create an application, build and transfer its Docker image, and deploy it and subsequent versions with persistent storage using Docker Compose.
+- [Deploy with PM2 (app-installer)](https://docs.nocobase.com/core/tutorials/deploy-with-app-installer.md): Build an application archive and upload it to the server and install it there with app-installer, using PM2 to run it and manage new releases.
+- [Upgrade NocoBase Core](https://docs.nocobase.com/core/developing-apps/upgrade-nocobase-core.md): Upgrade NocoBase Core with an agent or manually by merging a newer template, preserving business code, and verifying data and permissions.
+
+### Reference
+
+- [API reference](https://docs.nocobase.com/core/reference/api.md): Common public entries and contracts for services, HTTP, configuration and databases in NocoBase 3.
+- [Command-line reference](https://docs.nocobase.com/core/reference/cli.md): Application command entry points, source/deployment differences, configuration, databases, plugins and JSON output.
+- [Configuration reference](https://docs.nocobase.com/core/reference/configuration.md): File and environment precedence, common sections, browser-visible values, custom rules and validation commands.
+- [Directory and file conventions](https://docs.nocobase.com/core/reference/project-conventions.md): Look up app, plugin and UI source asset entry points, optional directories, generated files and ownership.
+- [Core and tool package index](https://docs.nocobase.com/core/reference/packages.md): Find NocoBase Core runtimes, libraries, database dialects and development tools by responsibility.
+- [Plugin index](https://docs.nocobase.com/core/reference/plugins.md): NocoBase 3 plugins, their purposes and whether they are built in.
+- [Database support and version compatibility](https://docs.nocobase.com/core/reference/compatibility.md): Find supported databases, driver installation and connection settings, database version requirements, and guidance for runtime compatibility and upgrades.
+- [Create an app with a different database](https://docs.nocobase.com/core/reference/database-configuration.md): Create a NocoBase application using existing database connection details, with configuration examples for SQLite, PostgreSQL, MySQL, SQL Server, Oracle and commercial drivers.
+- [FAQ](https://docs.nocobase.com/core/reference/faq.md): Common questions about apps, plugins, UI assets, configuration, commands, databases, upgrades and deployment.
+
+## Studio
+
+- [NocoBase Studio](https://docs.nocobase.com/studio/index.md)
+
+### Install and configure
+
+- [Installation overview](https://docs.nocobase.com/studio/setup/index.md): Administrators deploy Studio, prepare projects and Agents, configure checks, and invite the team.
+- [Deploy Studio](https://docs.nocobase.com/studio/setup/install.md): Deploy an empty Studio instance with Docker Compose, persist its data, and sign in as the administrator.
+- [Connect a Git platform](https://docs.nocobase.com/studio/setup/git.md): Connect a Git platform, using GitHub as the example, so Studio can create repositories and submit code.
+- [Connect a runtime](https://docs.nocobase.com/studio/setup/shared-runtimes.md): Connect one shared runtime so coding tools can execute team tasks.
+- [Configure Agents](https://docs.nocobase.com/studio/setup/agents.md): Check available models and select a model for the Lead Agent.
+- [Create your first project](https://docs.nocobase.com/studio/setup/new-project.md): Create a private repository and initialize a NocoBase application, ready for business tasks.
+- [Configure checks and previews](https://docs.nocobase.com/studio/setup/ci.md): Choose Agent self-checks, GitHub Actions, or external CI to verify changes and provide previews.
+- [Invite members](https://docs.nocobase.com/studio/setup/invite.md): Invite members to Studio and assign projects and roles.
+
+### Get started
+
+- [Join a project](https://docs.nocobase.com/studio/join/index.md): Accept an invitation and start work with the team’s configured Agents and runtimes.
+- [Sign in and personal settings](https://docs.nocobase.com/studio/join/sign-in.md): Accept an invitation, sign in, and manage your profile, notifications, and Git identity.
+- [Use a local Coding Agent](https://docs.nocobase.com/studio/join/local-agent.md): Use nb-studio from Claude Code or Codex to read projects, create tasks, and follow results.
+- [Talk to a Runner Agent](https://docs.nocobase.com/studio/join/runner-agent.md): Discuss requirements, inspect project code, and create tasks from a conversation in Studio.
+- [Connect your computer](https://docs.nocobase.com/studio/join/connect-computer.md): Use coding tools on your own computer through My Agent in Studio.
+
+### Task development
+
+- [Make a request](https://docs.nocobase.com/studio/use/raise-a-request.md): Create tasks through a conversation or form, with clear rules, scope, and acceptance criteria.
+- [My sessions](https://docs.nocobase.com/studio/use/sessions.md): Keep requirement discussions, linked tasks, and follow-up conversations together.
+- [My issues](https://docs.nocobase.com/studio/use/my-tasks.md): Find tasks you own, execute, or follow, with decisions and acceptance requests first.
+- [Follow progress](https://docs.nocobase.com/studio/use/follow-progress.md): Read the active step, handoffs, and run history, and add requirements through comments.
+- [Answer questions](https://docs.nocobase.com/studio/use/answer.md): Confirm business rules and handle failed runs, ownership handoffs, and personal runtime requests.
+- [Accept a result](https://docs.nocobase.com/studio/use/accept.md): Check the delivery report and working result, then merge or request changes.
+- [Inbox and reminders](https://docs.nocobase.com/studio/use/inbox.md): Read comments, mentions, and system messages, and choose sound, desktop, or push reminders.
+
+### Project management
+
+- [Project settings](https://docs.nocobase.com/studio/project/settings.md): Manage project members, repositories, run variables, and default skills.
+- [Knowledge base](https://docs.nocobase.com/studio/project/knowledge-base.md): Share requirements, business rules, and reference material with members and Agents.
+- [Project memory](https://docs.nocobase.com/studio/project/project-memory.md): Share confirmed rules, constraints, and lessons across Agents and maintain them with the code.
+- [Project progress](https://docs.nocobase.com/studio/project/progress.md): Follow project progress, unfinished setup, and team delivery metrics.
+
+### Agent management
+
+- [Agent configuration](https://docs.nocobase.com/studio/configure/agents.md): Configure available models, responsibilities, and the Lead Agent.
+- [Runtimes](https://docs.nocobase.com/studio/configure/runtimes.md): Manage execution capacity, tool availability, concurrency, and working directories.
+- [Connect a personal runtime](https://docs.nocobase.com/studio/join/personal-runtime.md): Connect your own coding tools and capacity for work performed on your behalf.
+- [Skills](https://docs.nocobase.com/studio/project/skills.md): Apply shared design, development, review, and delivery practices to Agent runs.
+- [Workload and usage](https://docs.nocobase.com/studio/project/usage.md): Track Agent queues, runtime capacity, and estimated model costs.
+
+### Quality management
+
+- [Checks and CI](https://docs.nocobase.com/studio/configure/checks.md): Select a check source and configure verification, PR previews, and test delivery.
+- [Checks and review](https://docs.nocobase.com/studio/project/checks-and-review.md): Follow check results, Agent reviews, and merge conditions.
+
+### Release management
+
+- [Release overview](https://docs.nocobase.com/studio/release/overview.md): Track PR previews, test delivery, versions, and production records.
+- [PR previews](https://docs.nocobase.com/studio/release/previews.md): Open the application for a PR and verify changes before merging.
+- [Hosted environments](https://docs.nocobase.com/studio/admin/environments.md): Configure runtime modes, variables, and lifecycle policies for preview and test applications.
+- [Versions and releases](https://docs.nocobase.com/studio/release/versions.md): Identify delivery versions with Git tags and inspect their tasks and deployable artifacts.
+- [Production delivery](https://docs.nocobase.com/studio/project/release.md): Deploy on your own infrastructure and record the version running in production.
+
+### Administration
+
+- [Git platforms](https://docs.nocobase.com/studio/configure/git.md): Connect team repositories and configure access and status updates.
+- [Members and roles](https://docs.nocobase.com/studio/admin/members-and-roles.md): Manage accounts, roles, and team access.
+- [API keys](https://docs.nocobase.com/studio/admin/api-keys.md): Grant limited access to CI, scripts, and integrations.
+- [Notifications and push](https://docs.nocobase.com/studio/admin/notifications.md): Configure invitation email, password recovery, and device push.
+- [Upgrades and backups](https://docs.nocobase.com/studio/admin/upgrade-and-backup.md): Back up and restore Studio, then update the server, runners, and CLI.
+
+### Reference
+
+- [Core concepts](https://docs.nocobase.com/studio/reference/concepts.md): Projects, tasks, sessions, Agents, runtimes, shared knowledge, and the link between code changes and releases.
+- [Agent execution rules](https://docs.nocobase.com/studio/reference/agent-execution.md)
+- [Task states and permissions](https://docs.nocobase.com/studio/reference/statuses-and-permissions.md): Look up task states, common transitions, and the operations available to people and Agents.
+- [nb-studio commands](https://docs.nocobase.com/studio/reference/cli.md): Install the Studio CLI and discover commands provided by your server.
+- [nocobase-runner commands](https://docs.nocobase.com/studio/reference/runner.md): Register and maintain runners, inspect logs, and manage tools, variables, updates, and working directories.
+- [Configuration options](https://docs.nocobase.com/studio/reference/config.md): Studio configuration fields, environment overrides, storage, and email.
+- [File and artifact storage](https://docs.nocobase.com/studio/reference/storage.md): Configure local files, S3-compatible services, and release artifact storage.
+- [Troubleshooting](https://docs.nocobase.com/studio/reference/faq.md): Diagnose common installation, Git, runtime, task, and delivery problems.
+
+## Tutorials
+
+### Getting started
+
+- [Build reliable enterprise apps with NocoBase 3](https://docs.nocobase.com/guides/build-reliable-enterprise-apps.md): NocoBase Core is the open-source foundation for developing and running business systems with AI, and NocoBase Studio is the governance platform where people and agents develop together.
+- [Prepare your development environment](https://docs.nocobase.com/guides/prepare-environment.md): Install Node.js 24, pnpm 11.7 and Git, and set up WSL if you're on Windows.
+- [Choose an agent and a model](https://docs.nocobase.com/guides/choose-agent-and-model.md): Pick a coding tool and a model.
+
+### Part 1: Build an app with Core
+
+- [Create the app](https://docs.nocobase.com/guides/create-app.md): Have the agent create a NocoBase app with SQLite in an empty directory, sign in, get to know the AGENTS.md, rules, skills and App foundation it comes with, and make the first Git commit.
+- [Write a system design document first](https://docs.nocobase.com/guides/write-a-design-doc.md): Talk ITAM's design through with the agent and keep the design document in the repository, then describe every later request in business terms, covering who uses it, what to do and what the rules are.
+- [First feature: the device register](https://docs.nocobase.com/guides/first-feature-devices.md): Have the agent build the device register from the design document, try it in the running app, and ask for changes.
+- [Device requests and approval](https://docs.nocobase.com/guides/requests-and-approval.md): Employees submit device requests, the ones that need approval go to an asset manager, and IT support issues the device and records it in the register; the workflow and notifications use Core's ready-made workflow and notification plugins.
+- [Roles and permissions](https://docs.nocobase.com/guides/roles-and-permissions.md): Sign in with each of the three accounts and check against the design document's permission matrix, so employees see only their own data, buttons follow the role, and the API refuses the same overreach.
+- [Accept the agent's work](https://docs.nocobase.com/guides/accept-agent-work.md): Using a "needed by" date on device requests as the example, run it yourself with existing data, and send it back with steps to reproduce and the expected result when something is wrong.
+- [Deploy the app](https://docs.nocobase.com/guides/deploy.md): Have the agent build an itam-lite image with the app's own Dockerfile and run it on a server with Docker Compose; configuration, data and the image are kept apart, and once live the app runs on its own.
+
+### Part 2: Use Studio in a team
+
+- [Bring the project into Studio](https://docs.nocobase.com/guides/bring-into-studio.md): Bring itam-lite into NocoBase Studio so the agent team can carry it forward.
+- [Hand a request to the agent team](https://docs.nocobase.com/guides/agent-team-request.md): Use the device stocktake request to walk an issue through its whole flow in Studio, from raising it, starting, assigning and answering questions to checks and review, acceptance and merging.
+- [Bring business colleagues in](https://docs.nocobase.com/guides/business-colleagues.md): Invite the asset manager to Studio, where they raise requests in business language in My sessions and answer questions, make decisions and accept results in My issues, without installing an agent.
+- [Capture methods and experience](https://docs.nocobase.com/guides/capture-knowledge.md): Put the asset management policies in the knowledge base, write the ITAM checklist as a skill and look at what agents noted in project memory, so the background and methods survive a change of person or agent.
+- [Release to production](https://docs.nocobase.com/guides/release.md): Using the device stocktake launch as the example, deploy to the staging environment Studio hosts after merging so the team can try it first, pick this release's issues from those pending release and tag it in the repository, then deploy to your own server with Studio's deployment guide and record the version production runs.
+
+### Best practices
+
+- [Best practices](https://docs.nocobase.com/guides/best-practices.md): Lessons and tips for building business systems with NocoBase Core and Studio.
+
+### Appendix
+
+- [Common prompts](https://docs.nocobase.com/guides/prompts.md): Prompt templates by scenario: create an app, write a design doc, raise a request, plan first, accept and send back, hand over to a new session, write rules, upgrade, deploy and review.
+- [Upgrade NocoBase Core](https://docs.nocobase.com/guides/upgrade-core.md): Upgrade NocoBase Core to the latest version with the app's built-in upgrade skill. Plan first, merge after you confirm, then run the tests and check the data.
+
+## FAQ
+
+- [NocoBase 2 and NocoBase 3](https://docs.nocobase.com/faq/from-v2.md)
+- [Do I need Studio to use Core?](https://docs.nocobase.com/faq/core-and-studio.md)
+- [Can I use NocoBase without knowing how to code?](https://docs.nocobase.com/faq/coding-experience.md)
+- [Can I keep using my preferred coding agent and model?](https://docs.nocobase.com/faq/coding-agents-and-models.md)
+- [Can I deploy and run my application independently?](https://docs.nocobase.com/faq/independent-deployment.md)
+- [Where can I find help with installation, development, or tasks?](https://docs.nocobase.com/faq/find-help.md)

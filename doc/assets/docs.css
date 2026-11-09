@@ -822,3 +822,51 @@ body { background: var(--page-bg); }
   .lp-capgrid { grid-template-columns: 1fr; }
   .lp-doc { padding: 20px 16px 4px; border-radius: 12px; }
 }
+
+/* Current upstream introduction diagram; keep archived diagram styling intact. */
+/* Solution and Studio feed into the business app; Core spans the foundation. */
+.layers:has(> .ly-node) { --ly-deep: oklch(0.25 0.06 266); margin: 28px 0; padding: 0; border: 0; background: transparent; display: grid; grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1.15fr) 64px minmax(0, 1fr); gap: 0; align-items: stretch; }
+.layers:has(> .ly-node) .ly-node { min-width: 0; padding: 18px 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); }
+.layers:has(> .ly-node) .ly-node > b { display: block; font-size: 16px; font-weight: 650; line-height: 1.4; letter-spacing: -0.025em; }
+.layers:has(> .ly-node) .ly-node > strong { display: block; margin-top: 12px; font-size: 12px; font-weight: 600; line-height: 1.7; }
+.layers:has(> .ly-node) .ly-node > p { margin: 8px 0 0; font-size: 12px; line-height: 1.85; color: var(--muted); }
+.layers:has(> .ly-node) .ly-app { border-color: color-mix(in oklch, var(--brand) 45%, var(--rule)); box-shadow: 0 3px 12px oklch(0.25 0.06 266 / 0.05); }
+.layers:has(> .ly-node) .ly-studio { background: var(--brand-tint); border-color: color-mix(in oklch, var(--brand) 20%, var(--rule)); }
+.layers:has(> .ly-node) .ly-studio > b { color: var(--brand); }
+.layers:has(> .ly-node) .ly-link { min-width: 0; align-self: center; display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 6px; color: var(--brand); }
+.layers:has(> .ly-node) .ly-link span { font-size: 10px; line-height: 1.5; text-align: center; overflow-wrap: anywhere; }
+.layers:has(> .ly-node) .ly-link i { display: block; width: 100%; height: 10px; background: currentColor; clip-path: polygon(0 45%, calc(100% - 6px) 45%, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, calc(100% - 6px) 55%, 0 55%); }
+.layers:has(> .ly-node) .ly-generate i { transform: rotate(180deg); }
+.layers:has(> .ly-node) .ly-foundation { grid-column: 1 / -1; margin-top: 20px; padding: 18px 20px; border-radius: 10px; background: var(--ly-deep); color: #fff; }
+.layers:has(> .ly-node) .ly-foundation > div { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; }
+.layers:has(> .ly-node) .ly-foundation b { font-size: 18px; font-weight: 650; line-height: 1.4; }
+.layers:has(> .ly-node) .ly-foundation span { font-size: 12px; color: oklch(0.83 0.025 266); }
+.layers:has(> .ly-node) .ly-foundation p { margin: 8px 0 0; font-size: 12px; line-height: 1.8; color: oklch(0.83 0.025 266); }
+
+
+
+@media (max-width: 600px) {
+  .layers:has(> .ly-node) { grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr); row-gap: 12px; }
+  .layers:has(> .ly-node) .ly-node { padding: 14px 12px; }
+  .layers:has(> .ly-node) .ly-solution { grid-column: 3; grid-row: 1; }
+  .layers:has(> .ly-node) .ly-studio { grid-column: 1; grid-row: 1; }
+  .layers:has(> .ly-node) .ly-generate { grid-column: 3; grid-row: 2; }
+  .layers:has(> .ly-node) .ly-develop { grid-column: 1; grid-row: 2; }
+  .layers:has(> .ly-node) .ly-link { gap: 6px; }
+  .layers:has(> .ly-node) .ly-link i { width: 10px; height: 18px; transform: none; clip-path: polygon(45% 0, 55% 0, 55% 12px, 100% 12px, 50% 100%, 0 12px, 45% 12px); }
+  .layers:has(> .ly-node) .ly-app { grid-column: 1 / -1; grid-row: 3; }
+  .layers:has(> .ly-node) .ly-foundation { grid-row: 4; margin-top: 0; padding: 16px; }
+}
+
+/* Studio concept diagram colors from pinned upstream. */
+.concept-map { background: #f7f9ff; border-color: #d5dff4; }
+.concept-map .box.brand { background: #4169e1; border-color: #4169e1; }
+.concept-map .box.human { background: #fff4df; border-color: #efd4a2; }
+.concept-map .box.agent { background: #eaf0ff; border-color: #c8d6ff; }
+.concept-map .box.knowledge { background: #eaf7f1; border-color: #bfdfd0; }
+.concept-map .box.human b { color: #8a5100; }
+.concept-map .box.agent b { color: #4169e1; }
+.concept-map .box.knowledge b { color: #21745b; }
+.concept-map .box span { color: var(--ink-2); }
+.concept-map .box.brand b, .concept-map .box.brand span { color: #fff; }
+.concept-map .down { padding: 5px 0; }

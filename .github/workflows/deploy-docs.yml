@@ -39,6 +39,7 @@ env:
   PREFIX: tai-lieu-nocobase-3
   PUBLIC_URL: https://oxmode.ai/tai-lieu-nocobase-3/
   LEGACY_PREFIX: tai-lieu-nocobase
+  NOCOBASE_REPUBLICATION_AUTHORIZED: ${{ vars.NOCOBASE_REPUBLICATION_AUTHORIZED }}
 
 jobs:
   deploy:
@@ -153,9 +154,4 @@ jobs:
           ssh vps "cd '$DOCS_PATH' && ln -sfn '${{ steps.swap.outputs.previous }}' current.next && mv -Tf current.next current"
           echo "rolled back to ${{ steps.swap.outputs.previous }}"
 
-      - name: Keep the last 5 releases
-        if: success()
-        run: |
-          ssh vps "cd '$DOCS_PATH/releases' && cur=\$(basename \"\$(readlink ../current)\") && \
-            ls -1t | grep -vx \"\$cur\" | tail -n +5 | xargs -r rm -rf --"
-          ssh vps "ls -1t '$DOCS_PATH/releases'"
+      # Existing releases are retained; pruning is a separate, explicitly scoped operation.
